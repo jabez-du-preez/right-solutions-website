@@ -1,0 +1,183 @@
+.page-sub-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.section-sub-header {
+  margin: 2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.card-type-right {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card-type-left {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* #######################Color templates######################## */
+
+.dark-grey {
+  color: #6d6d6d;
+}
+
+.light-grey {
+  color: #8d8d8d;
+}
+
+.white {
+  color: white;
+}
+
+.color-blue {
+  /* color: #2f71edf8; */
+  /* color: #255bc0f8; */
+  color: #3bb3eb;
+}
+
+.bg-light-blue {
+  background-color: #00aeff2e;
+}
+
+.bg-dark-blue {
+  background-color: #003d59;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+/* #######################Position templates######################## */
+
+.center-justify {
+  justify-content: center;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-align {
+  text-align: left;
+}
+
+/* #######################General Styling######################## */
+
+.border-radius {
+  border-radius: 1rem;
+}
+
+.box-shadow-0 {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.8);
+}
+
+.padding-0 {
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+.lift-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.padding-auto {
+  padding: 0 2rem;
+}
+
+.lift-on-hover:hover {
+  transform: translateY(-10px);
+}
+
+.first {
+  order: 1;
+}
+
+.second {
+  order: 2;
+}
+
+.MuiGrid-item {
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+/* #######################Media Queries######################## */
+
+@media only screen and (max-width: 991px) {
+  .page-sub-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-sub-title {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .page-sub-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card-type-right {
+    text-align: center;
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .center-align {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .resize-img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .first {
+    order: 2;
+  }
+
+  .second {
+    order: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .center-align {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .resize-img {
+    width: 65%;
+    height: 65%;
+  }
+}
