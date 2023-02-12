@@ -26,7 +26,7 @@
 /* #######################Color templates######################## */
 
 .dark-grey {
-  color: #6d6d6d;
+  color: #5e5e5e;
 }
 
 .light-grey {
@@ -82,6 +82,10 @@
 }
 
 /* #######################General Styling######################## */
+
+.box-sizing {
+  box-sizing: border-box;
+}
 
 .border-radius {
   border-radius: 1rem;
@@ -180,4 +184,35 @@
     width: 65%;
     height: 65%;
   }
+}
+
+/* #######################Animations######################## */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.duration-1000 {
+  animation-duration: 1s;
+}
+
+.duration-2000 {
+  animation-duration: 2s;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
 }

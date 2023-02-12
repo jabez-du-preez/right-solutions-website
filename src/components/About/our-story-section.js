@@ -47,7 +47,16 @@ export default function StorySection() {
           services.
         </Typography>
       </div> */}
-      <div className="container">
+      {/* <div className="container"> */}
+      <Box
+        className="container"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
         <Typography
           variant="h3"
           sx={{ mt: 5, fontWeight: 500, fontFamily: "Montserrat" }}
@@ -58,16 +67,24 @@ export default function StorySection() {
 
         <Box
           sx={{
-            mt: 7,
+            mt: 3,
           }}
         >
           <Grid
             container
-            className="border-radius bg-light-blue lift-on-hover"
+            className="border-radius bg-light-blue lift-on-hover fadeIn duration-1000 delay-500 ease-in-out"
             spacing={2}
             padding={3}
             sx={{
+              margin: "0 auto",
               boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
+              width: {
+                xs: "90%",
+                sm: "90%",
+                md: "100%",
+                lg: "100%",
+                xl: "100%",
+              },
             }}
             order={{ xs: 1, md: 2 }}
           >
@@ -76,7 +93,7 @@ export default function StorySection() {
               xs={12}
               md={6}
               lg={9}
-              className="first"
+              className="first fadeIn duration-1000 delay-500 ease-in-out"
               sx={{
                 padding: "16px 16px",
                 display: "flex",
@@ -129,7 +146,7 @@ export default function StorySection() {
         </Box>
         <Box
           sx={{
-            mt: 7,
+            mt: 5,
           }}
         >
           <Grid
@@ -138,8 +155,16 @@ export default function StorySection() {
             spacing={2}
             padding={3}
             sx={{
+              margin: "0 auto",
               backgroundColor: "#003d59",
               boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
+              width: {
+                xs: "90%",
+                sm: "90%",
+                md: "100%",
+                lg: "100%",
+                xl: "100%",
+              },
             }}
           >
             <Grid
@@ -211,7 +236,15 @@ export default function StorySection() {
             spacing={2}
             padding={3}
             sx={{
+              margin: "0 auto",
               boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
+              width: {
+                xs: "90%",
+                sm: "90%",
+                md: "100%",
+                lg: "100%",
+                xl: "100%",
+              },
             }}
             order={{ xs: 1, md: 2 }}
           >
@@ -230,9 +263,9 @@ export default function StorySection() {
               }}
             >
               <Typography sx={{ fontWeight: 300, fontSize: "1.5rem" }}>
-                <span className="color-blue">Right Solutions</span> is a proudly
-                South African company that is responsibility centred. We are
-                committed to providing a positive working environment by
+                <span className="color-blue font-bold">Right Solutions</span> is
+                a proudly South African company that is responsibility centred.
+                We are committed to providing a positive working environment by
                 transformation through skills training, opportunity creation and
                 the procurement of goods and services.
               </Typography>
@@ -270,7 +303,7 @@ export default function StorySection() {
             </Grid>
           </Grid>
         </Box>
-      </div>
+      </Box>
       <div className="container mt-45">
         <div className="row justify-content-center">
           <div className="col-lg-6 col-sm-12 ">
