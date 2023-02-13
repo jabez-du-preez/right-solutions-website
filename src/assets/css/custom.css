@@ -23,7 +23,15 @@
   font-weight: 400;
 }
 
+.text-capitalize {
+  text-transform: capitalize;
+}
+
 /* #######################Color templates######################## */
+
+.light-shadow {
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
+}
 
 .dark-grey {
   color: #5e5e5e;
@@ -43,12 +51,32 @@
   color: #3bb3eb;
 }
 
+.color-dark-blue {
+  color: #005279;
+}
+
 .bg-light-blue {
-  background-color: #00aeff2e;
+  background-color: #00aeff1f;
 }
 
 .bg-dark-blue {
   background-color: #003d59;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(90deg, #fff 0%, #3bb3eb 100%);
+}
+
+.bg-blue-gradient-reverse {
+  background: linear-gradient(90deg, #3bb3eb 0%, #fff 100%);
+}
+
+.bg-dark-blue-gradient {
+  background: linear-gradient(90deg, #003d59 0%, #fff 100%);
+}
+
+.bg-dark-blue-gradient-reverse {
+  background: linear-gradient(90deg, #fff 0%, #003d59 100%);
 }
 
 .montserrat {
@@ -63,14 +91,30 @@
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 550;
+}
+
 /* #######################Position templates######################## */
 
 .center-justify {
   justify-content: center;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
 .position-absolute {
   position: absolute;
+}
+
+.center-align {
+  margin: 0 auto;
 }
 
 .text-center {
@@ -82,6 +126,28 @@
 }
 
 /* #######################General Styling######################## */
+
+.card-icon {
+  color: white;
+  font-size: 30px;
+  padding-top: 3px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #3bb3eb;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.animated-line {
+  width: 80px;
+  height: 1px;
+  position: relative;
+  background: #3bb3eb;
+  margin: 20px 0 15px;
+  display: inline-block;
+}
 
 .box-sizing {
   box-sizing: border-box;
@@ -107,7 +173,7 @@
 }
 
 .padding-auto {
-  padding: 0 2rem;
+  padding: 2rem 2rem;
 }
 
 .lift-on-hover:hover {
@@ -122,13 +188,6 @@
   order: 2;
 }
 
-.MuiGrid-item {
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-}
-
 /* #######################Media Queries######################## */
 
 @media only screen and (max-width: 991px) {
@@ -139,6 +198,17 @@
 @media only screen and (max-width: 767px) {
   .page-sub-title {
     font-size: 1.75rem;
+  }
+  .bg-blue-gradient {
+    background: linear-gradient(90deg, #2d88b3 0%, #3bb3eb 100%);
+  }
+
+  .bg-blue-gradient-reverse {
+    background: linear-gradient(90deg, #003d59 0%, #00567e 100%);
+  }
+
+  .color-dark-blue {
+    color: #0097dd;
   }
 }
 @media only screen and (max-width: 375px) {

@@ -49,16 +49,18 @@ export default function StorySection() {
       </div> */}
       {/* <div className="container"> */}
       <Box
-        className="container"
         sx={{
+          padding: 0,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignContent: "center",
+          overflow: "hidden",
         }}
       >
         <Typography
           variant="h3"
+          id="our-story"
           sx={{ mt: 5, fontWeight: 500, fontFamily: "Montserrat" }}
           className="page-sub-title mt-25 color-blue fw-500 text-center"
         >
@@ -67,24 +69,24 @@ export default function StorySection() {
 
         <Box
           sx={{
-            mt: 3,
+            mt: 6,
           }}
         >
           <Grid
             container
-            className="border-radius bg-light-blue lift-on-hover fadeIn duration-1000 delay-500 ease-in-out"
-            spacing={2}
+            className=" bg-light-blue lift-on-hover fadeIn duration-1000 delay-500 ease-in-out"
+            spacing={3}
             padding={3}
             sx={{
               margin: "0 auto",
-              boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
-              width: {
-                xs: "90%",
-                sm: "90%",
-                md: "100%",
-                lg: "100%",
-                xl: "100%",
+              padding: {
+                xs: "0.5rem",
+                sm: "0.5rem",
+                md: "1rem",
+                lg: "2rem 8rem",
+                xl: "2rem 8rem",
               },
+              boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
             }}
             order={{ xs: 1, md: 2 }}
           >
@@ -92,17 +94,35 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={9}
+              lg={6}
+              style={{
+                padding: 0,
+              }}
               className="first fadeIn duration-1000 delay-500 ease-in-out"
               sx={{
-                padding: "16px 16px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignContent: "center",
               }}
             >
-              <Typography sx={{ fontWeight: 300, fontSize: "1.5rem" }}>
+              <Typography
+                sx={{
+                  fontWeight: 300,
+                  padding: "1rem",
+                  fontSize: {
+                    sm: "1.25rem",
+                    md: "1.25rem",
+                    lg: "1.5rem",
+                  },
+                  textAlign: {
+                    xs: "center",
+                    sm: "center",
+                    md: "left",
+                    lg: "left",
+                  },
+                }}
+              >
                 <span className="color-blue">Right Solutions</span> has been
                 providing end-to-end high-quality managed infrastructure and
                 security services to clients based both on cloud and on-premises
@@ -115,28 +135,35 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={3}
+              lg={6}
               className="second"
+              style={{
+                padding: 0,
+              }}
               sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                boxSizing: "border-box",
-                padding: "16px 16px",
+                paddingleft: 0,
+                paddingTop: 0,
               }}
             >
               <Box
                 sx={{
                   width: {
-                    lg: 350,
+                    xs: "85%",
+                    sm: "85%",
+                    lg: "100%",
                   },
                   height: {
-                    lg: "100%",
+                    lg: "auto",
+                  },
+                  margin: {
+                    xs: " auto",
+                    sm: "auto",
+                    md: "auto",
                   },
                 }}
               >
                 <img
-                  className="border-radius"
+                  className="border-radius light-shadow"
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                   alt="client-celebration"
                 />
@@ -151,11 +178,12 @@ export default function StorySection() {
         >
           <Grid
             container
-            className="border-radius lift-on-hover"
+            className="lift-on-hover"
             spacing={2}
             padding={3}
             sx={{
               margin: "0 auto",
+              padding: "2rem 8rem",
               backgroundColor: "#003d59",
               boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
               width: {
@@ -171,8 +199,7 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={3}
-              className="padding-0 "
+              lg={6}
               sx={{
                 display: "flex",
                 flexDirection: "row",
@@ -183,7 +210,7 @@ export default function StorySection() {
               <Box
                 sx={{
                   width: {
-                    lg: 350,
+                    lg: "100%",
                   },
                   height: {
                     lg: "100%",
@@ -191,7 +218,7 @@ export default function StorySection() {
                 }}
               >
                 <img
-                  className="border-radius"
+                  className="border-radius light-shadow"
                   src="https://images.unsplash.com/photo-1604881989793-466aca8dd319?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80"
                   alt="company pride"
                 />
@@ -201,13 +228,12 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={9}
+              lg={6}
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignContent: "center",
-                padding: "16px 16px",
               }}
             >
               <Typography
@@ -232,11 +258,12 @@ export default function StorySection() {
         >
           <Grid
             container
-            className="border-radius bg-light-blue lift-on-hover"
+            className=" bg-light-blue lift-on-hover"
             spacing={2}
             padding={3}
             sx={{
               margin: "0 auto",
+              padding: "2rem 8rem",
               boxShadow: "0.1rem 0.1rem 1rem 0 rgba(0, 0, 0, 0.05)",
               width: {
                 xs: "90%",
@@ -252,14 +279,13 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={9}
+              lg={6}
               className="first "
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignContent: "center",
-                padding: "16px 16px",
               }}
             >
               <Typography sx={{ fontWeight: 300, fontSize: "1.5rem" }}>
@@ -274,20 +300,19 @@ export default function StorySection() {
               item
               xs={12}
               md={6}
-              lg={3}
+              lg={6}
               className="second"
               sx={{
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
                 boxSizing: "border-box",
-                padding: "16px 16px",
               }}
             >
               <Box
                 sx={{
                   width: {
-                    lg: 350,
+                    lg: "100%",
                   },
                   height: {
                     lg: "100%",
@@ -295,7 +320,7 @@ export default function StorySection() {
                 }}
               >
                 <img
-                  className="border-radius"
+                  className="border-radius light-shadow"
                   src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
                   alt="table mountain, cape town"
                 />
@@ -312,7 +337,9 @@ export default function StorySection() {
                 <div className="icon mb-15">
                   <i className="flaticon flaticon-coding"></i>
                 </div>
-                <h4 className="white">Our Approach</h4>
+                <h4 className="white" id="our-approach">
+                  Our Approach
+                </h4>
                 <p className="white">
                   As businesses today evolve to stay ahead of their ever
                   changing environment, so do their digital requirements, we
@@ -359,7 +386,9 @@ export default function StorySection() {
               <div className="icon mb-15">
                 <i className="flaticon flaticon-web"></i>
               </div>
-              <h4 className="white">Our Expertise</h4>
+              <h4 className="white" id="our-expertise">
+                Our Expertise
+              </h4>
               <p className="white">
                 We always tell our customers how important it is to check the
                 qualifications of ther cyber partners. With that in mind why

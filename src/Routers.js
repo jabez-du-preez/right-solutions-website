@@ -61,7 +61,7 @@ import EndPoint from "./components/Services/EndPoint";
 import ModernWorkplace from "./components/Services/ModernWorkplace";
 import Network from "./components/Services/Network";
 import Outsourced from "./components/Services/Outsourced";
-import ServerInfrastructure from "./components/Services/ServerInfrastructure";
+import ServerInfrastructure from "./components/Services/ServerInfrastructure/index";
 import Strategy from "./components/Services/Strategy";
 import Voice from "./components/Services/Voice";
 

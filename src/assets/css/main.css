@@ -9037,16 +9037,13 @@ h6,
 
 /* Feature Style Two */
 .feature-item-two {
-  /* background: white; */
-  /* padding: 40px 35px; */
-  /* padding: auto 4rem; */
   display: flex;
   color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  height: 22rem;
+  height: auto;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
 }
