@@ -1,7 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import bannerImage from "../../assets/images/banners/cabling1.jpg";
-import Layouts from "../helpers/Layouts";
+import bannerImage from "../../../assets/images/banners/cabling1.jpg";
+import Contact from "../../Contact";
+import BacktoTopCom from "../../helpers/BackToTopCom";
+import Layouts from "../../helpers/Layouts";
+import Importance from "./Importance";
+import Methods from "./Methods";
 
 export default function ServerInfrastructure() {
   return (
@@ -32,7 +36,7 @@ export default function ServerInfrastructure() {
               md: "1.25rem",
               lg: "1.5rem",
             },
-            fontWeight: 300,
+            fontWeight: 400,
             fontFamily: "Montserrat",
           }}
         >
@@ -61,6 +65,10 @@ export default function ServerInfrastructure() {
           focus on your core business.
         </Typography>
       </Box>
+      <Importance />
+      <Methods />
+      <Contact />
+      <BacktoTopCom className=".main-header " />
     </Layouts>
   );
 }

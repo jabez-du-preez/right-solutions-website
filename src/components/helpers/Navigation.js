@@ -104,19 +104,19 @@ function Navigation({ className }) {
             </ul>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/our-story">
               About <i className="fa fa-angle-down" />
             </Link>
             <ul className="sub-menu">
               <li>
-                <Link to="/our-story">Our Story</Link>
+                <Link to="/our-story">About Us</Link>
+              </li>
+              {/* <li>
+                <Link to="#our-approach">Our Approach</Link>
               </li>
               <li>
-                <Link to="/our-approach">Our Approach</Link>
-              </li>
-              <li>
-                <Link to="/our-expertise">Our Expertise</Link>
-              </li>
+                <Link to="#our-expertise">Our Expertise</Link>
+              </li> */}
               <li>
                 <Link to="/contact-us">Contact Us</Link>
               </li>
