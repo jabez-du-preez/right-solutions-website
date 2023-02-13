@@ -27,6 +27,42 @@
   text-transform: capitalize;
 }
 
+/* #######################Font templates######################## */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
 /* #######################Color templates######################## */
 
 .light-shadow {
@@ -63,6 +99,53 @@
   background-color: #003d59;
 }
 
+/* .bg-white {
+  background-color: white;
+  height: 100%;
+}
+
+.bg-white::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  color: black;
+  background-color: #00202f;
+  transition: all 0.5s linear;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.bg-white:hover:after {
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-dark-blue::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  color: black;
+  background-color: #00202f;
+  transition: all 0.5s linear;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.bg-dark-blue:hover:after {
+  height: 100%;
+  z-index: -1;
+} */
+
 .bg-blue-gradient {
   background: linear-gradient(90deg, #fff 0%, #3bb3eb 100%);
 }
@@ -79,22 +162,6 @@
   background: linear-gradient(90deg, #fff 0%, #003d59 100%);
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 550;
-}
-
 /* #######################Position templates######################## */
 
 .center-justify {
@@ -103,6 +170,10 @@
 
 .display-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .space-around {
@@ -177,7 +248,7 @@
 }
 
 .lift-on-hover:hover {
-  transform: translateY(-10px);
+  transform: translateY(-25px);
 }
 
 .first {

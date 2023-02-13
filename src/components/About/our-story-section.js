@@ -330,29 +330,27 @@ export default function StorySection() {
         </Box>
       </Box>
       <div className="container mt-45">
-        <div className="row justify-content-center">
-          <div className="col-lg-6 col-sm-12 ">
-            <div className=" bg-dark-blue text-center lift-on-hover border-radius  feature-item-two wow fadeInUp delay-0-2s">
-              <div className="padding-auto">
-                <div className="icon mb-15">
-                  <i className="flaticon flaticon-coding"></i>
-                </div>
-                <h4 className="white" id="our-approach">
-                  Our Approach
-                </h4>
-                <p className="white">
-                  As businesses today evolve to stay ahead of their ever
-                  changing environment, so do their digital requirements, we
-                  pride ourselves on building long-term partnerships with
-                  clients by providing a strategic approach to solve complex
-                  business problems and deliver digital innovation and
-                  exceptional experiences to both their employees and customers.
-                </p>
+        <div className="row ">
+          <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
+            <div className=" bg-dark-blue border-radius text-center lift-on-hover   feature-item-two wow fadeInUp delay-0-2s padding-auto ">
+              <div className="icon mb-15">
+                <i className="flaticon flaticon-coding"></i>
               </div>
+              <h4 className="white" id="our-approach">
+                Our Approach
+              </h4>
+              <p className="white">
+                As businesses today evolve to stay ahead of their ever changing
+                environment, so do their digital requirements, we pride
+                ourselves on building long-term partnerships with clients by
+                providing a strategic approach to solve complex business
+                problems and deliver digital innovation and exceptional
+                experiences to both their employees and customers.
+              </p>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 flex-card">
-            <div className="text-center border-radius lift-on-hover padding-auto feature-item-two color-two wow fadeInUp delay-0-4s">
+          <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
+            <div className="bg-white text-center border-radius lift-on-hover padding-auto feature-item-two color-two wow fadeInUp delay-0-4s">
               <div className="icon mb-15">
                 <i className="flaticon flaticon-computer"></i>
               </div>
@@ -367,7 +365,7 @@ export default function StorySection() {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-6 col-sm-12 ">
+          <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
             <div className="text-center lift-on-hover border-radius padding-auto feature-item-two wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">
                 <i className="flaticon flaticon-art"></i>
@@ -381,7 +379,7 @@ export default function StorySection() {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 flex-card">
+          <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
             <div className="text-center border-radius bg-dark-blue lift-on-hover padding-auto feature-item-two  wow fadeInUp delay-0-4s">
               <div className="icon mb-15">
                 <i className="flaticon flaticon-web"></i>

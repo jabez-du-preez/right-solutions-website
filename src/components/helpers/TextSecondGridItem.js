@@ -77,10 +77,11 @@ export default function TextSecondGridItem({
           }}
         >
           <Typography
+            fontFamily="Montserrat"
+            color="#002435"
             sx={{
               fontWeight: 550,
               padding: "1rem",
-              color: "white",
               fontSize: {
                 sm: "1.25rem",
                 md: "1.25rem",
@@ -97,6 +98,7 @@ export default function TextSecondGridItem({
             {headerText}
           </Typography>
           <Typography
+            fontFamily="Montserrat"
             sx={{
               fontWeight: 300,
               padding: "1rem",

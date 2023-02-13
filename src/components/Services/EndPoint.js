@@ -3,7 +3,6 @@ import React from "react";
 import bannerImage from "../../assets/images/banners/laptop1.jpg";
 import BacktoTopCom from "../helpers/BackToTopCom";
 import Layouts from "../helpers/Layouts";
-import EndpointCards from "./Endpoint-Cards";
 
 export default function EndPoint() {
   return (
@@ -40,7 +39,6 @@ export default function EndPoint() {
           Allow us to explain
         </Typography>
       </Box>
-      <EndpointCards />
       <BacktoTopCom className=".main-header" />
     </Layouts>
   );

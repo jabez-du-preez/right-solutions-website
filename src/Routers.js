@@ -57,7 +57,7 @@ import Vulnerability from "./components/ManagedServices/Vulnerability";
 import Backup from "./components/Services/Backup";
 import CoManaged from "./components/Services/CoManaged";
 import Email from "./components/Services/Email";
-import EndPoint from "./components/Services/EndPoint";
+import EndPoint from "./components/Services/EndPoint/index";
 import ModernWorkplace from "./components/Services/ModernWorkplace";
 import Network from "./components/Services/Network";
 import Outsourced from "./components/Services/Outsourced";

@@ -43,9 +43,10 @@ export default function TextFirstGridItem({
           }}
         >
           <Typography
-            color="white"
+            color="#008ACB"
+            fontFamily="Montserrat"
             sx={{
-              fontWeight: 300,
+              fontWeight: 550,
               fontSize: {
                 sm: "1.75rem",
                 md: "1.75rem",
@@ -63,8 +64,9 @@ export default function TextFirstGridItem({
           </Typography>
           <Typography
             color="white"
+            fontFamily="Montserrat"
             sx={{
-              fontWeight: 300,
+              fontWeight: 400,
               mt: 5,
               fontSize: {
                 sm: "1.25rem",
