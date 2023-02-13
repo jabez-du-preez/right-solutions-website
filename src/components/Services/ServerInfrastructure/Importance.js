@@ -1,5 +1,6 @@
 import { Container, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
+import Card from "../../helpers/Card";
 
 export default function Importance() {
   return (
@@ -39,100 +40,28 @@ export default function Importance() {
 
         <Grid container spacing={4} sx={{ mt: 3 }}>
           <Grid item xs={12} sm={6} md={4} lg={4}>
-            <div className="feature-item-two display-flex space-around  lift-on-hover border-radius color-two padding-auto wow fadeInUp delay-0-2s">
-              <div className="card-icon mb-20">
-                <i className="flaticon flaticon-3d"></i>
-              </div>
-              <h4>
-                <a href="/service-details">High Availability</a>
-              </h4>
-              <p>
-                High availability is the ability of a system to continue
-                operating without interruption when one or more of its
-                components fail.
-              </p>
-            </div>
+            <Card
+              iconBackgroundColor="color-two"
+              flaticon="flaticon-3d"
+              headerText="High Availability"
+              explainationText="High availability is the ability of a system to continue operating without interruption when one or more of its components fail."
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
-            {/* <Card className="lift-on-hover">
-              <CardContent
-                sx={{
-                  padding: "2rem 2rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignContent: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <div className="card-icon center-align">
-                  <i className="flaticon flaticon-3d"></i>
-                </div>
-                <Typography
-                  color="black"
-                  variant="h5"
-                  textAlign="center"
-                  sx={{
-                    fontSize: {
-                      xs: "1.25rem",
-                      sm: "1.25rem",
-                      md: "1.25rem",
-                      lg: "1.5rem",
-                    },
-                    fontWeight: 600,
-                    fontFamily: "Montserrat",
-                    mb: 2,
-                    mt: 1,
-                  }}
-                >
-                  High Availability
-                </Typography>
-                <Typography
-                  variant="p"
-                  textAlign="center"
-                  color="#6D6D6D"
-                  sx={{
-                    fontSize: {
-                      xs: "1rem",
-                      sm: "1rem",
-                      md: "1rem",
-                      lg: "1.25rem",
-                    },
-                    fontWeight: 400,
-                    fontFamily: "Montserrat",
-                  }}
-                >
-                  High availability is the ability of a system to continue
-                  operating without interruption when one or more of its
-                  components fail.
-                </Typography>
-              </CardContent>
-            </Card> */}
-            <div className="feature-item-two  lift-on-hover  border-radius  color-two padding-auto wow fadeInUp delay-0-2s">
-              <div className="card-icon mb-20">
-                <i className="flaticon flaticon-3d"></i>
-              </div>
-              <h4>
-                <a href="/service-details">Scalability</a>
-              </h4>
-              <p>
-                An intelligently designed server infrastructure can be scaled up
-                or down to meet the changing needs of your business.
-              </p>
-            </div>
+            <Card
+              iconBackgroundColor="color-two"
+              flaticon="flaticon-3d"
+              headerText="Scalability"
+              explainationText="An intelligently designed server infrastructure can be scaled up or down to meet the changing needs of your business."
+            />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
-            <div className="feature-item-two  lift-on-hover  border-radius  color-two padding-auto wow fadeInUp delay-0-2s">
-              <div className="card-icon mb-20">
-                <i className="flaticon flaticon-3d"></i>
-              </div>
-              <h4>
-                <a href="/service-details">Security</a>
-              </h4>
-              <p>
-                Your server infrastructure is the backbone of your business. It
-                needs to be secure and protected from outside threats.
-              </p>
-            </div>
+            <Card
+              iconBackgroundColor="color-two"
+              flaticon="flaticon-3d"
+              headerText="Security"
+              explainationText="Your server infrastructure is the backbone of your business. It needs to be secure and protected from outside threats."
+            />
           </Grid>
         </Grid>
       </Container>
