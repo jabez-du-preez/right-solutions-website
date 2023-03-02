@@ -11,16 +11,16 @@ export default function TextFirstGridItem({
   return (
     <Box
       sx={{
-        mt: 6,
+        mt: 10,
       }}
     >
       <Grid
         container
-        className={`fadeIn lift-on-hover ${backgroundClass}`}
+        className={`fadeIn ${backgroundClass}`}
         spacing={3}
         sx={{
           padding: {
-            xs: "1rem",
+            xs: "1rem 3rem",
             sm: "1rem",
             md: "1rem",
             lg: "2rem 8rem",
@@ -43,15 +43,11 @@ export default function TextFirstGridItem({
           }}
         >
           <Typography
-            color="#008ACB"
-            fontFamily="Montserrat"
+            color="white"
             sx={{
+              fontFamily: "Montserrat",
               fontWeight: 550,
-              fontSize: {
-                sm: "1.75rem",
-                md: "1.75rem",
-                lg: "2rem",
-              },
+              fontSize: "2rem",
               textAlign: {
                 xs: "center",
                 sm: "center",
@@ -66,13 +62,14 @@ export default function TextFirstGridItem({
             color="white"
             fontFamily="Montserrat"
             sx={{
+              padding: {
+                sm: "0 2rem",
+                md: "0 1rem",
+                lg: "0 0",
+              },
               fontWeight: 400,
               mt: 5,
-              fontSize: {
-                sm: "1.25rem",
-                md: "1.25rem",
-                lg: "1.5rem",
-              },
+              fontSize: "1.25rem",
               textAlign: {
                 xs: "center",
                 sm: "center",

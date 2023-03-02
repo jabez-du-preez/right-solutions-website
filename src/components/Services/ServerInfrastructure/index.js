@@ -1,18 +1,18 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import bannerImage from "../../../assets/images/banners/cabling1.jpg";
-import Contact from "../../Contact";
+// import bannerImage from "../../../assets/images/banners/cabling1.jpg";
 import BacktoTopCom from "../../helpers/BackToTopCom";
 import Layouts from "../../helpers/Layouts";
+import Conclusion from "./Conclusion";
 import Importance from "./Importance";
 import Methods from "./Methods";
 
 export default function ServerInfrastructure() {
   return (
     <Layouts
-      pageTitle="Server Infrastructure done"
-      highlight="right"
-      bannerImage={bannerImage}
+      pageTitle="We Do"
+      highlight="IT"
+      bannerImage="https://images.unsplash.com/photo-1580106815433-a5b1d1d53d85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
     >
       <Box
         sx={{
@@ -67,7 +67,7 @@ export default function ServerInfrastructure() {
       </Box>
       <Importance />
       <Methods />
-      <Contact />
+      <Conclusion />
       <BacktoTopCom className=".main-header " />
     </Layouts>
   );

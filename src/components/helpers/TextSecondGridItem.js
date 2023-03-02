@@ -16,7 +16,7 @@ export default function TextSecondGridItem({
     >
       <Grid
         container
-        className={`lift-on-hover ${backgroundClass}`}
+        className={` ${backgroundClass}`}
         spacing={2}
         sx={{
           padding: {
@@ -78,15 +78,11 @@ export default function TextSecondGridItem({
         >
           <Typography
             fontFamily="Montserrat"
-            color="#002435"
+            color="black"
             sx={{
               fontWeight: 550,
               padding: "1rem",
-              fontSize: {
-                sm: "1.25rem",
-                md: "1.25rem",
-                lg: "2rem",
-              },
+              fontSize: "2rem",
               textAlign: {
                 xs: "center",
                 sm: "center",
@@ -103,11 +99,7 @@ export default function TextSecondGridItem({
               fontWeight: 300,
               padding: "1rem",
               color: "white",
-              fontSize: {
-                sm: "1.25rem",
-                md: "1.25rem",
-                lg: "1.5rem",
-              },
+              fontSize: "1.25rem",
               textAlign: {
                 xs: "center",
                 sm: "center",

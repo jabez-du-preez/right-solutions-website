@@ -1,4 +1,4 @@
-// import { useEffect } from "react";
+import React from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // Todo: for spacific page rtl disabled
 // import { useLocation } from "react-router-dom";

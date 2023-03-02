@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function OurServices() {
+export default function OurServices({ id }) {
   return (
-    <section className="what-we-do-two text-center pt-75 rpt-95 pb-90 rpb-70">
+    <section
+      id={id}
+      className="what-we-do-two text-center pt-75 rpt-95 pb-90 rpb-70"
+    >
       <div className="container">
         <div className="section-title mb-55">
           <span className="sub-title">What We Do</span>

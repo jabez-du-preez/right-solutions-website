@@ -61,8 +61,7 @@ export default function FooterHomeSix() {
                   fontSize: 18,
                 }}
               >
-                Let us help you, the <span className="color-blue">Right</span>{" "}
-                way!
+                We Do IT!
               </Typography>
             </div>
           </Grid>

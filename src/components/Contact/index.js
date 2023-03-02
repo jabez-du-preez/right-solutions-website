@@ -6,7 +6,10 @@ import background from "../../assets/images/banners/contact.jpg";
 export default function Contact() {
   return (
     <>
-      <section className="contact-page pt-60 py-10 rpy-100">
+      <section
+        style={{ backgroundColor: "white" }}
+        className="contact-page pt-60 py-10 rpy-100"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-4">

@@ -5,18 +5,25 @@ export default function Card({
   flaticon,
   headerText,
   explainationText,
+  heightClass,
+  colorClass,
+  textColorClass,
 }) {
   return (
-    <div
-      className={`feature-item-two lift-on-hover border-radius ${iconBackgroundColor} padding-auto wow fadeInUp delay-0-2s`}
-    >
-      <div className="card-icon mb-20">
-        <i className={`flaticon ${flaticon}`}></i>
+    <div className="col-sm-12 col-lg-12">
+      <div
+        className={`feature-item-two ${colorClass} lift-on-hover border-radius padding-auto wow fadeInUp delay-0-2s ${heightClass} `}
+      >
+        <div className={`${iconBackgroundColor} card-icon mb-20`}>
+          <i className={`${flaticon}`}></i>
+        </div>
+        <h4
+          className={`${textColorClass} text-center text-capitalize color-black`}
+        >
+          {headerText}
+        </h4>
+        <p className={`${textColorClass} text-center`}>{explainationText}</p>
       </div>
-      <h4>
-        <a href="/service-details">{headerText}</a>
-      </h4>
-      <p>{explainationText}</p>
     </div>
   );
 }
