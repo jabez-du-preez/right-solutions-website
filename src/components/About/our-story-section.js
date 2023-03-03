@@ -1,7 +1,35 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
+import ReusableHero from "../helpers/ReusableHero";
+import ReusableHeroRight from "../helpers/ReusableHeroRight";
 
 export default function StorySection() {
+  const heroOneHeader = (
+    <span>
+      <span className="color-blue fw-500">Right Solutions</span> has been
+      providing end-to-end high-quality managed infrastructure and security
+      services to clients based both on cloud and on-premises solutions.
+      Assisting both small and medium enterprises with solutions to enhance
+      their digital effectiveness and competitiveness with a key focus on
+      security.
+    </span>
+  );
+  const heroTwoHeader = (
+    <span>
+      We pride ourselves in forming long term lasting relationships with clients
+      by taking the time to understand their business before taking a dedicated
+      and proactive approach to suggest and implement the right solution that
+      meets their requirements.
+    </span>
+  );
+  const heroThreeHeader = (
+    <span>
+      <span className="color-blue fw-500">Right Solutions</span> is a proudly
+      South African company that is responsibility centred. We are committed to
+      providing a positive working environment by transformation through skills
+      training, opportunity creation and the procurement of goods and services.
+    </span>
+  );
   return (
     <>
       {/* <div className="container">
@@ -67,6 +95,25 @@ export default function StorySection() {
         </Typography>
 
         <Box
+          sx={{
+            mt: 6,
+          }}
+        >
+          <ReusableHero
+            secondaryText={heroOneHeader}
+            backgroundImage="url(https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)"
+          />
+          <ReusableHeroRight
+            secondaryText={heroTwoHeader}
+            backgroundImage="url(https://images.unsplash.com/photo-1604881989793-466aca8dd319?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2942&q=80)"
+          />
+          <ReusableHero
+            secondaryText={heroThreeHeader}
+            backgroundImage="url(https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80)"
+          />
+        </Box>
+
+        {/* <Box
           sx={{
             mt: 6,
           }}
@@ -169,8 +216,8 @@ export default function StorySection() {
               </Box>
             </Grid>
           </Grid>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           sx={{
             mt: 5,
           }}
@@ -249,8 +296,8 @@ export default function StorySection() {
               </Typography>
             </Grid>
           </Grid>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           sx={{
             mt: 5,
           }}
@@ -326,7 +373,7 @@ export default function StorySection() {
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </Box> */}
       </Box>
       <div className="container mt-45">
         <div className="row ">
@@ -334,7 +381,7 @@ export default function StorySection() {
             <div className="justify-content-center display-flex space-around flex-wrap">
               <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-blue-dark wow color-two fadeInUp delay-0-2s">
                 <div className="icon mb-15">
-                  <i className="flaticon flaticon-coding"></i>
+                  <i className="fa-solid fa-user-doctor"></i>
                 </div>
                 <h4 className="color-white" id="our-approach">
                   Our Approach
@@ -353,7 +400,7 @@ export default function StorySection() {
           <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
             <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-white-custom wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">
-                <i className="flaticon flaticon-computer"></i>
+                <i className="fa-solid fa-person-digging"></i>
               </div>
               <h4 className="color-black">Our Mission</h4>
               <p className="color-black">
@@ -370,7 +417,7 @@ export default function StorySection() {
             <div className="justify-content-center display-flex space-around flex-wrap">
               <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-white-custom wow color-two fadeInUp delay-0-2s">
                 <div className="icon mb-15">
-                  <i className="flaticon flaticon-art"></i>
+                  <i className="fa-solid fa-rocket"></i>
                 </div>
                 <h4 className="color-black">Our Vision</h4>
                 <p className="color-black">
@@ -385,7 +432,7 @@ export default function StorySection() {
           <div className="col-sm-12 col-lg-6 ustify-content-center display-flex space-around flex-wrap">
             <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-blue-dark wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">
-                <i className="flaticon flaticon-web"></i>
+                <i className="fa-solid fa-people-carry-box"></i>
               </div>
               <h4 className="color-white" id="our-expertise">
                 Our Expertise
