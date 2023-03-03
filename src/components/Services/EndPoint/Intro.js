@@ -6,6 +6,7 @@ export default function Intro() {
     <Box
       sx={{
         mt: 7,
+        mb: 7,
         padding: {
           xs: "0 2rem",
           sm: "0 2rem",

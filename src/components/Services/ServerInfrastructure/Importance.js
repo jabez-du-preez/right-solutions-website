@@ -37,24 +37,30 @@ export default function Importance() {
         <Grid container spacing={1} sx={{ mt: 3 }}>
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <Card
+              colorClass="bg-white-custom"
+              textColorClass="color-black"
               iconBackgroundColor="bg-blue"
-              flaticon="flaticon flaticon-3d"
+              flaticon="fa-solid fa-arrows-rotate"
               headerText="High Availability"
               explainationText="High availability is the ability of a system to continue operating without interruption when one or more of its components fail."
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <Card
+              colorClass="bg-white-custom"
+              textColorClass="color-black"
               iconBackgroundColor="bg-green"
-              flaticon="flaticon flaticon-3d"
+              flaticon="fa-solid fa-scale-unbalanced"
               headerText="Scalability"
               explainationText="An intelligently designed server infrastructure can be scaled up or down to meet the changing needs of your business."
             />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <Card
+              colorClass="bg-white-custom"
+              textColorClass="color-black"
               iconBackgroundColor="bg-purple"
-              flaticon="flaticon flaticon-3d"
+              flaticon="fa-solid fa-building-lock"
               headerText="Security"
               explainationText="Your server infrastructure is the backbone of your business. It needs to be secure and protected from outside threats."
             />

@@ -8,32 +8,32 @@ export default function OurOffers() {
       header: "Configuration and maintenance",
       explaination:
         "We'll help you to configure and maintain your firewall systems to ensure that they are properly protecting your network and data.",
-      icon: "fa-location-dot",
-      iconColor: "bg-green",
+      icon: "fa-toolbox",
+      iconColor: "bg-pink",
     },
     {
       id: 2,
       header: "Policy management",
       explaination:
         "We'll work with you to develop and maintain firewall policies that align with your organization's security needs and goals.",
-      icon: "fa-wifi",
-      iconColor: "bg-blue",
+      icon: "fa-handcuffs",
+      iconColor: "bg-orange",
     },
     {
       id: 3,
       header: "Monitoring and alerts",
       explaination:
         "Our team will continuously monitor your firewall systems for any potential threats or issues, and will provide alerts as needed.",
-      icon: "fa-lock",
-      iconColor: "bg-yellow",
+      icon: "fa-bell",
+      iconColor: "bg-blue",
     },
     {
       id: 4,
       header: "Support and guidance",
       explaination:
         "Our team is available to provide support and guidance as needed to help you effectively manage your firewall systems.",
-      icon: "fa-lock",
-      iconColor: "bg-orange",
+      icon: "fa-headset",
+      iconColor: "bg-purple",
     },
   ];
   return (

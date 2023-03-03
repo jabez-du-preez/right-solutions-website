@@ -35,8 +35,10 @@ export default function OurOffers() {
         <Grid container spacing={2} sx={{ mt: 3 }}>
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <Card
+              colorClass="bg-blue-dark"
+              textColorClass="color-white"
               heightClass="height-400"
-              iconBackgroundColor="bg-purple"
+              iconBackgroundColor="bg-green"
               flaticon="fa-solid fa-gears"
               headerText="Customized AWS strategy"
               explainationText="We'll work with you to design a customized AWS strategy that aligns with your organization's specific needs and goals."
@@ -44,8 +46,10 @@ export default function OurOffers() {
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <Card
+              colorClass="bg-blue-dark"
+              textColorClass="color-white"
               heightClass="height-400"
-              iconBackgroundColor="bg-pink"
+              iconBackgroundColor="bg-purple"
               flaticon="fa-solid fa-list-check"
               headerText="Implementation and management support"
               explainationText="Our team of IT professionals will help you to implement and manage your AWS strategy, including tasks such as data migration, security, and compliance."
@@ -53,8 +57,10 @@ export default function OurOffers() {
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={4}>
             <Card
+              colorClass="bg-blue-dark"
+              textColorClass="color-white"
               heightClass="height-400"
-              iconBackgroundColor="bg-yellow"
+              iconBackgroundColor="bg-red"
               flaticon="fa-solid fa-headset"
               headerText="Support and training"
               explainationText="Our team is available to provide support and training as needed to help you effectively leverage the power of AWS."

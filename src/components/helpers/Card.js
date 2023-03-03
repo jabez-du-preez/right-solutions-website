@@ -17,9 +17,7 @@ export default function Card({
         <div className={`${iconBackgroundColor} card-icon mb-20`}>
           <i className={`${flaticon}`}></i>
         </div>
-        <h4
-          className={`${textColorClass} text-center text-capitalize color-black`}
-        >
+        <h4 className={`${textColorClass} text-center text-capitalize`}>
           {headerText}
         </h4>
         <p className={`${textColorClass} text-center`}>{explainationText}</p>

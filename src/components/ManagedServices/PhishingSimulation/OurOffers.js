@@ -8,7 +8,7 @@ export default function OurOffers() {
       header: "Customized simulations",
       explaination:
         "We'll work with you to design customized phishing simulations that test your employees' awareness of phishing threats and their ability to recognize and report them.",
-      icon: "fa-location-dot",
+      icon: "fa-users-gear",
       iconColor: "bg-green",
     },
     {
@@ -16,7 +16,7 @@ export default function OurOffers() {
       header: "Detailed reporting",
       explaination:
         "After each simulation, we'll provide detailed reports that include information on the success rate of the simulation, the types of phishing emails that were most successful, and the employees who were most susceptible to phishing attacks.",
-      icon: "fa-wifi",
+      icon: "fa-newspaper",
       iconColor: "bg-blue",
     },
     {
@@ -24,7 +24,7 @@ export default function OurOffers() {
       header: "Remediation resources",
       explaination:
         "Our service includes a range of resources and materials to help you educate your employees about phishing threats and best practices for preventing them.",
-      icon: "fa-lock",
+      icon: "fa-screwdriver-wrench",
       iconColor: "bg-yellow",
     },
     {
@@ -32,7 +32,7 @@ export default function OurOffers() {
       header: "Ongoing support",
       explaination:
         "Our team is available to provide ongoing support and guidance as needed to help you effectively implement and maintain your phishing simulation program.",
-      icon: "fa-lock",
+      icon: "fa-headset",
       iconColor: "bg-orange",
     },
   ];

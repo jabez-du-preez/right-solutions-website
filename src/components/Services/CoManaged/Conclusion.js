@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import CustomDivider from "../../helpers/CustomDivider";
 
 export default function Conclusion() {
   return (
@@ -16,7 +15,6 @@ export default function Conclusion() {
         },
       }}
     >
-      <CustomDivider />
       <Typography
         variant="h4"
         textAlign="center"

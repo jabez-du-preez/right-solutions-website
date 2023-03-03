@@ -8,32 +8,32 @@ export default function OurOffers() {
       header: "Proactive threat hunting",
       explaination:
         "Our team will use a variety of tools and techniques to search for and investigate potential threats to your systems and data.",
-      icon: "fa-location-dot",
-      iconColor: "bg-green",
+      icon: "fa-person-rifle",
+      iconColor: "bg-purple",
     },
     {
       id: 2,
       header: "Customized approach",
       explaination:
         "We'll work with you to develop a customized threat hunting plan that aligns with your organization's specific security needs and goals.",
-      icon: "fa-wifi",
-      iconColor: "bg-blue",
+      icon: "fa-users-gear",
+      iconColor: "bg-pink",
     },
     {
       id: 3,
       header: "Threat intelligence",
       explaination:
         "Our service includes access to a range of threat intelligence resources to help our team stay up to date on the latest threats and trends.",
-      icon: "fa-lock",
-      iconColor: "bg-yellow",
+      icon: "fa-brain",
+      iconColor: "bg-blue",
     },
     {
       id: 4,
       header: "Support and guidance",
       explaination:
         "Our team is available to provide support and guidance as needed to help you effectively respond to any threats that we detect.",
-      icon: "fa-lock",
-      iconColor: "bg-orange",
+      icon: "fa-headset",
+      iconColor: "bg-green",
     },
   ];
   return (

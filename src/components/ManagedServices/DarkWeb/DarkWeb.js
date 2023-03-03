@@ -2,8 +2,8 @@ import React from "react";
 // import bannerImage from "../../../assets/images/banners/darkweb.jpg";
 import Layouts from "../../helpers/Layouts";
 import ReusableConclusion from "../../helpers/ReusableConclusion";
-import OurOffers from "../PhishingSimulation/OurOffers";
 import Intro from "./Intro";
+import OurOffers from "./OurOffers";
 
 export default function DarkWeb() {
   const conclusion = (
