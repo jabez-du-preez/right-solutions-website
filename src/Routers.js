@@ -33,35 +33,59 @@ export default function Routers() {
     <Routes>
       <Route path="/" element={<HomeSix />} />
       <Route path="*" element={<FourZeroFour />} />
-      <Route path="/server-infrastructure" element={<ServerInfrastructure />} />
-      <Route path="/backup-solutions" element={<Backup />} />
-      <Route path="/co-managed-it" element={<CoManaged />} />
-      <Route path="/email-security" element={<Email />} />
-      <Route path="/endpoint-security" element={<EndPoint />} />
-      <Route path="/modern-workplace" element={<ModernWorkplace />} />
-      <Route path="/network-infrastructure" element={<Network />} />
-      <Route path="/outsourced-it" element={<Outsourced />} />
-      <Route path="/strategy-and-consulting" element={<Strategy />} />
-      <Route path="/voice-solutions" element={<Voice />} />
-      <Route path="/cyber-incident-response" element={<CyberIncident />} />
-      <Route path="/dark-web-monitoring" element={<DarkWeb />} />
-      <Route path="/firewall-management" element={<FirewallManagement />} />
-      <Route path="/pentesting" element={<Pentesting />} />
-      <Route path="/phishing-simulation" element={<PhishingSimulation />} />
       <Route
-        path="/cyber-security-awareness-training"
+        path="/solutions/server-infrastructure"
+        element={<ServerInfrastructure />}
+      />
+      <Route path="/solutions/backup-solutions" element={<Backup />} />
+      <Route path="/solutions/co-managed-it" element={<CoManaged />} />
+      <Route path="/solutions/email-security" element={<Email />} />
+      <Route path="/solutions/endpoint-security" element={<EndPoint />} />
+      <Route path="/solutions/modern-workplace" element={<ModernWorkplace />} />
+      <Route path="/solutions/network-infrastructure" element={<Network />} />
+      <Route path="/solutions/outsourced-it" element={<Outsourced />} />
+      <Route path="/solutions/strategy-and-consulting" element={<Strategy />} />
+      <Route path="/solutions/voice-solutions" element={<Voice />} />
+      <Route
+        path="/managed-services/cyber-incident-response"
+        element={<CyberIncident />}
+      />
+      <Route
+        path="/managed-services/dark-web-monitoring"
+        element={<DarkWeb />}
+      />
+      <Route
+        path="/managed-services/firewall-management"
+        element={<FirewallManagement />}
+      />
+      <Route path="/managed-services/pentesting" element={<Pentesting />} />
+      <Route
+        path="/managed-services/phishing-simulation"
+        element={<PhishingSimulation />}
+      />
+      <Route
+        path="/managed-services/cyber-security-awareness-training"
         element={<SecurityAwareness />}
       />
-      <Route path="/managed-siem-and-soc" element={<SIEM />} />
-      <Route path="/threat-hunting" element={<ThreatHunting />} />
-      <Route path="/vulnerability-management" element={<Vulnerability />} />
-      <Route path="/amazon-web-services" element={<Amazon />} />
-      <Route path="/microsoft-365" element={<Microsoft365 />} />
-      <Route path="/microsoft-azure" element={<MicrosoftAzure />} />
+      <Route path="/managed-services/managed-siem-and-soc" element={<SIEM />} />
+      <Route
+        path="/managed-services/threat-hunting"
+        element={<ThreatHunting />}
+      />
+      <Route
+        path="/managed-services/vulnerability-management"
+        element={<Vulnerability />}
+      />
+      <Route path="/cloud-services/amazon-web-services" element={<Amazon />} />
+      <Route path="/cloud-services/microsoft-365" element={<Microsoft365 />} />
+      <Route
+        path="/cloud-services/microsoft-azure"
+        element={<MicrosoftAzure />}
+      />
       <Route path="/our-approach" element={<Approach />} />
-      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/about/contact-us" element={<Contact />} />
       <Route path="/our-expertise" element={<Expertise />} />
-      <Route path="/our-story" element={<Story />} />
+      <Route path="/about/our-story" element={<Story />} />
     </Routes>
   );
 }
