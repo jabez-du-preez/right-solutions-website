@@ -1,13 +1,25 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 // import bannerImage from "../../../assets/images/banners/cabling1.jpg";
-import BacktoTopCom from "../../helpers/BackToTopCom";
 import Layouts from "../../helpers/Layouts";
-import Conclusion from "./Conclusion";
+import ReusableConclusion from "../../helpers/ReusableConclusion";
 import Importance from "./Importance";
 import Methods from "./Methods";
 
 export default function ServerInfrastructure() {
+  const conclusion = (
+    <span>
+      <span className="color-blue fw-500">Right Solutions</span> offers the
+      needed talent to <span className="color-blue fw-500">design</span>,{" "}
+      <span className="color-blue fw-500">deploy</span> and{" "}
+      <span className="color-blue fw-500">manage</span> infrastructure solutions
+      that are <span className="color-blue fw-500">agile</span>,{" "}
+      <span className="color-blue fw-500">efficient</span> and{" "}
+      <span className="color-blue fw-500">secure</span>. There by helping you to
+      mitigate risk, protecting data and allowing you to meet the opportunities
+      of today and tomorrow.
+    </span>
+  );
   return (
     <Layouts
       pageTitle="We Do"
@@ -67,8 +79,7 @@ export default function ServerInfrastructure() {
       </Box>
       <Importance />
       <Methods />
-      <Conclusion />
-      <BacktoTopCom className=".main-header " />
+      <ReusableConclusion conclusion={conclusion} />
     </Layouts>
   );
 }
