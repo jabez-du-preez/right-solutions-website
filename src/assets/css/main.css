@@ -61,11 +61,26 @@
 
 body {
   color: #454545;
-  background: white;
   font-weight: 400;
   line-height: 28px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom right, #e1f5ff, #ffffff);
+  background-size: 600% 600%;
+  animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 a {
@@ -142,10 +157,6 @@ h5 {
 
 h6 {
   font-size: 16px;
-}
-
-p {
-  color: #454545;
 }
 
 ul,
@@ -283,7 +294,7 @@ input[type="radio"] {
 .section-title .sub-title {
   font-weight: 500;
   margin-bottom: 20px;
-  color: #104cba;
+  color: #3bb3eb;
   display: inline-block;
 }
 
@@ -439,7 +450,7 @@ a.theme-btn.style-eight {
   border: none;
   font-size: 18px;
   padding: 16px 40px;
-  background: #2969e6;
+  background: #3bb3eb;
   font-family: "Montserrat";
   /* "Montserrat"; */
 }
@@ -661,20 +672,17 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 500;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 .list-style-one li:before {
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   content: "\f00c";
   font-weight: 600;
   margin-top: -4px;
-  margin-right: 15px;
-  width: 35px;
-  height: 35px;
-  background: #104cba;
-  line-height: 35px;
+  margin-right: 20px;
+  background: #007bb4;
   border-radius: 50%;
   text-align: center;
   font-family: "Font Awesome 5 Free";
@@ -704,7 +712,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   content: "\f00c";
   font-weight: 700;
   margin-right: 20px;
-  color: #104cba;
+  color: #3bb3eb;
   font-family: "Font Awesome 5 Free";
 }
 
@@ -1010,7 +1018,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 .home-six .theme-btn,
 .home-six .scroll-top,
 .home-six .theme-btn.style-three:hover {
-  background: #2f97f7;
+  background: #3bb3eb;
 }
 .home-six .theme-btn:hover,
 .home-six .scroll-top:hover,
@@ -1030,7 +1038,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
 }
 
 .home-six .section-title .sub-title {
-  color: #2f97f7;
+  color: #3bb3eb;
 }
 
 .home-six .section-title h2 {
@@ -7096,7 +7104,7 @@ h6,
 /* Hero Five*/
 .hero-content-five .sub-title {
   font-weight: 500;
-  color: #104cba;
+  color: #3bb3eb;
 }
 
 @media only screen and (min-width: 1501px) {
@@ -7127,6 +7135,8 @@ h6,
 .hero-content-five .list-style-one li {
   font-size: 18px;
   font-weight: 400;
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (max-width: 767px) {
   .hero-content-five .list-style-one li {
@@ -7599,7 +7609,7 @@ h6,
   }
 }
 .page-banner:before {
-  background: #121c2e;
+  background: #0d192f;
 }
 .page-banner .page-title {
   color: white;
@@ -7608,17 +7618,17 @@ h6,
 }
 @media only screen and (max-width: 991px) {
   .page-banner .page-title {
-    font-size: 55px;
+    font-size: 36px;
   }
 }
 @media only screen and (max-width: 767px) {
   .page-banner .page-title {
-    font-size: 45px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 375px) {
   .page-banner .page-title {
-    font-size: 38px;
+    font-size: 24px;
   }
 }
 .page-banner .breadcrumb {
@@ -8089,7 +8099,7 @@ h6,
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
-  color: #2969e6;
+  color: #3bb3eb;
   margin-top: 2px;
   border: 1px solid;
   border-radius: 50%;
@@ -8586,24 +8596,23 @@ h6,
   z-index: -1;
 }
 
-.services-eight:before {
+/* .services-eight:before {
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
   background: url(../images/services/service-eight-bg.png) no-repeat
     center/cover;
-}
+} */
 
 .services-eight:after {
   opacity: 0.95;
-  background: #f8f8f8;
+  background: #e1f5ff;
 }
 
 .service-slider-wrap {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0x;
+  margin-right: 0px;
 }
 .service-slider-wrap .slick-dots {
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8641,39 +8650,44 @@ h6,
   top: 50%;
   position: absolute;
   border-radius: 50%;
-  background: #f43336;
+  background: #3bb3eb;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .service-slider-wrap .slick-dots li.slick-active {
-  border-color: #f43336;
+  border-color: #3bb3eb;
 }
 .service-slider-wrap .slick-dots li.slick-active:before {
-  background: #f43336;
+  background: #3bb3eb;
 }
 
 .service-item-eight {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   background: white;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
+  border-radius: 15px;
+  margin: 2rem 0 3rem 0;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
 }
+
 .service-item-eight .icon {
-  font-size: 50px;
-  color: #f43336;
+  font-size: 35px;
+  color: white;
   margin-bottom: 22px;
-  width: 100px;
-  height: 100px;
-  background: #f8f8f8;
-  line-height: 100px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
   border-radius: 50%;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 .service-item-eight .icon img {
   display: inline-block;
@@ -8687,7 +8701,7 @@ h6,
 .service-item-eight .learn-more i {
   float: right;
   font-size: 16px;
-  color: #f43336;
+  color: #3bb3eb;
 }
 .service-item-eight p {
   -webkit-transition: 0.5s;
@@ -8695,17 +8709,27 @@ h6,
   transition: 0.5s;
 }
 .service-item-eight:hover {
-  background: #030a15;
+  background: #013953;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.45);
 }
-.service-item-eight:hover h3 a,
+.service-item-eight:hover h4,
 .service-item-eight:hover p {
   color: white;
 }
 .service-item-eight:hover .learn-more {
-  color: #f43336;
+  color: #3bb3eb;
 }
 .service-item-eight:hover .learn-more:hover {
   text-decoration: underline;
+}
+
+.service-item-eight:hover .icon {
+  color: #3bb3eb;
+  background: white;
+}
+
+.service-header {
+  transition: all 0.5s ease-in-out;
 }
 
 /* Service Details */
@@ -9038,24 +9062,22 @@ h6,
 /* Feature Style Two */
 .feature-item-two {
   display: flex;
-  color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  height: auto;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item-two .icon i {
-  color: #ff6600;
+  color: #00aeff;
   font-size: 30px;
   padding-top: 3px;
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: #ff47571f;
+  background: #2f97f71f;
   line-height: 70px;
   border-radius: 50%;
   text-align: center;
@@ -9301,7 +9323,7 @@ h6,
   transform: translateY(-50%);
   width: 125px;
   height: 125px;
-  background: #104cba;
+  background: #3bb3eb;
   line-height: 125px;
   border-radius: 50%;
   text-align: center;

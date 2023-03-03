@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logos/RS Logo - Dark Blue.png";
+import logo from "../../../assets/images/logos/RS Logo - Blue.png";
 import StickyMenu from "../../../lib/StickyMenu";
 import "./style.css";
 
@@ -208,14 +208,9 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/our-story">Our Story</Link>
+                          <Link to="/our-story">About Us</Link>
                         </li>
-                        <li>
-                          <Link to="/our-approach">Our Approach</Link>
-                        </li>
-                        <li>
-                          <Link to="/our-expertise">Our Expertise</Link>
-                        </li>
+
                         <li>
                           <Link to="/contact-us">Contact Us</Link>
                         </li>

@@ -1,6 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import Contact from "../Contact";
 
 export default function StorySection() {
   return (
@@ -330,17 +329,17 @@ export default function StorySection() {
         </Box>
       </Box>
       <div className="container mt-45">
-        <div className="row justify-content-center">
-          <div className="col-lg-6 col-sm-12 ">
-            <div className=" bg-dark-blue text-center lift-on-hover border-radius  feature-item-two wow fadeInUp delay-0-2s">
-              <div className="padding-auto">
+        <div className="row ">
+          <div className="col-lg-6 col-sm-12">
+            <div className="justify-content-center display-flex space-around flex-wrap">
+              <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-blue-dark wow color-two fadeInUp delay-0-2s">
                 <div className="icon mb-15">
                   <i className="flaticon flaticon-coding"></i>
                 </div>
-                <h4 className="white" id="our-approach">
+                <h4 className="color-white" id="our-approach">
                   Our Approach
                 </h4>
-                <p className="white">
+                <p className="color-white">
                   As businesses today evolve to stay ahead of their ever
                   changing environment, so do their digital requirements, we
                   pride ourselves on building long-term partnerships with
@@ -351,13 +350,13 @@ export default function StorySection() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 flex-card">
-            <div className="text-center border-radius lift-on-hover padding-auto feature-item-two color-two wow fadeInUp delay-0-4s">
+          <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
+            <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-white-custom wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">
                 <i className="flaticon flaticon-computer"></i>
               </div>
-              <h4>Our Mission</h4>
-              <p>
+              <h4 className="color-black">Our Mission</h4>
+              <p className="color-black">
                 To provide the best customer-centric managed solutions that no
                 only transforms clients digital initiatives but improves their
                 efficiency and business profitability with an emphasis on
@@ -366,30 +365,32 @@ export default function StorySection() {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-lg-6 col-sm-12 ">
-            <div className="text-center lift-on-hover border-radius padding-auto feature-item-two wow color-two fadeInUp delay-0-2s">
-              <div className="icon mb-15">
-                <i className="flaticon flaticon-art"></i>
+        <div className="row">
+          <div className="col-lg-6 col-sm-12">
+            <div className="justify-content-center display-flex space-around flex-wrap">
+              <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-white-custom wow color-two fadeInUp delay-0-2s">
+                <div className="icon mb-15">
+                  <i className="flaticon flaticon-art"></i>
+                </div>
+                <h4 className="color-black">Our Vision</h4>
+                <p className="color-black">
+                  Is to provide clients high-quality cutting-edge digital
+                  solutions that improves business resiliency and overall
+                  security posture, which in turn will drive sustainable growth
+                  and boost economic empowerment.
+                </p>
               </div>
-              <h4>Our Vision</h4>
-              <p>
-                Is to provide clients high-quality cutting-edge digital
-                solutions that improves business resiliency and overall security
-                posture, which in turn will drive sustainable growth and boost
-                economic empowerment.
-              </p>
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12 flex-card">
-            <div className="text-center border-radius bg-dark-blue lift-on-hover padding-auto feature-item-two  wow fadeInUp delay-0-4s">
+          <div className="col-sm-12 col-lg-6 ustify-content-center display-flex space-around flex-wrap">
+            <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-blue-dark wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">
                 <i className="flaticon flaticon-web"></i>
               </div>
-              <h4 className="white" id="our-expertise">
+              <h4 className="color-white" id="our-expertise">
                 Our Expertise
               </h4>
-              <p className="white">
+              <p className="color-white">
                 We always tell our customers how important it is to check the
                 qualifications of ther cyber partners. With that in mind why
                 should you trust us?
@@ -398,7 +399,6 @@ export default function StorySection() {
           </div>
         </div>
       </div>
-      <Contact />
     </>
   );
 }
