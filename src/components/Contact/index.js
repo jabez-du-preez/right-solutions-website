@@ -1,9 +1,85 @@
-import React from "react";
+import { Box, Chip } from "@mui/material";
+import React, { useRef, useState } from "react";
 import background from "../../assets/images/banners/contact.jpg";
-
 // import background from "../../assets/images/banners/contact/jpg";
 
+const emailAddress = process.env.REACT_APP_EMAIL_ADDRESS;
+
 export default function Contact() {
+  const [email, setEmail] = useState({});
+  const [emailSent, setEmailSent] = useState(false);
+  const form = useRef();
+
+  const onChangeHandler = (e) => {
+    const { name, value } = e.target;
+    setEmail({ ...email, [name]: value });
+  };
+
+  // process.env.REACT_APP_EMAIL_ADDRESS = "info@woulfdigitalstudio.co.za";
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    // const emailConfig = {
+    //   SecureToken: "ba30f2b1-34f4-4aad-9a4b-55a6fa4886c8",
+    //   To: "info@woulfdigitalstudio.co.za",
+    //   From: `${email.email}`,
+    //   Subject: `${email.name} - Potential Client`,
+    //   Body: `${email.message}`,
+    // };
+
+    // const emailConfig = {
+    //   Host: "smtp.elasticemail.com",
+    //   Username: "web.mail@woulfdigitalstudio.co.za",
+    //   Password: "C8FD4B1F34C4829BCD0CBBE4462FC8DCF5F6",
+    //   To: "info@woulfdigitalstudio.co.za",
+    //   From: "info@woulfdigitalstudio.co.za",
+    //   Subject: `${email.user_email} - Potential Client`,
+    //   Body: `${email.message}`,
+    // };
+
+    const emailConfig = {
+      SecureToken: "b986fcbf-f0dc-407c-ae7a-cdb930020ec4",
+      To: emailAddress,
+      From: emailAddress,
+      Subject: `${email.user_email} - Potential Client`,
+      Body: `${email.message}`,
+    };
+
+    if (window.Email) {
+      window.Email.send(emailConfig).then((response) => {
+        if (response === "OK") {
+          setEmailSent(true);
+          setTimeout(() => {
+            setEmailSent(false);
+            setEmail({});
+          }, 2000);
+        }
+      });
+    }
+  };
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_skyjkmw",
+  //       "template_rdxpppd",
+  //       form.current,
+  //       "suMeD8d1WxMp63-OH"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         setEmailSent(true);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         setEmailSent(false);
+  //       }
+  //     );
+  // };
+
   return (
     <>
       <section
@@ -31,11 +107,13 @@ export default function Contact() {
                   encounter.
                 </p>
                 <form
-                  id="comment-form"
+                  ref={form}
+                  id="email-form"
                   className="comment-form mt-35"
-                  name="comment-form"
-                  action="#"
+                  name="email-form"
+                  // action="#"
                   method="post"
+                  onSubmit={onSubmitHandler}
                 >
                   <div className="row clearfix justify-content-center">
                     <div className="col-sm-6">
@@ -46,11 +124,12 @@ export default function Contact() {
                         <input
                           type="text"
                           id="full-name"
-                          name="full-name"
+                          name="user_name"
+                          onChange={onChangeHandler}
                           className="form-control"
-                          value=""
+                          value={email.user_name || ""}
                           placeholder="Your Full Name"
-                          required=""
+                          required
                         />
                       </div>
                     </div>
@@ -62,34 +141,60 @@ export default function Contact() {
                         <input
                           type="email"
                           id="email"
-                          name="email"
+                          name="user_email"
+                          onChange={onChangeHandler}
                           className="form-control"
-                          value=""
+                          value={email.user_email || ""}
                           placeholder="Your Email"
-                          required=""
+                          required
                         />
                       </div>
                     </div>
                     <div className="col-sm-12">
                       <div className="form-group">
-                        <label htmlFor="comments">
+                        <label htmlFor="message">
                           <i className="fas fa-pencil-alt"></i>
                         </label>
                         <textarea
-                          name="comments"
-                          id="comments"
+                          name="message"
+                          id="message"
                           className="form-control"
                           rows="4"
+                          value={email.message || ""}
+                          onChange={onChangeHandler}
                           placeholder="Write Message"
-                          required=""
+                          required
                         ></textarea>
                       </div>
                     </div>
                     <div className="col-sm-12">
                       <div className="form-group mb-0">
-                        <button type="submit" className="theme-btn">
-                          Send Message
-                        </button>
+                        <Box
+                          component="div"
+                          sx={{ display: "flex", alignItems: "center" }}
+                        >
+                          <button type="submit" className="theme-btn">
+                            Send Message
+                          </button>
+                          {emailSent && (
+                            <Chip
+                              sx={{ ml: 3 }}
+                              label="Email sent!"
+                              color="success"
+                            />
+                            // <Typography
+                            //   variant="h6"
+                            //   sx={{
+                            //     ml: 3,
+                            //     fontFamily: "Montserrat",
+                            //     fontWeight: 500,
+                            //     color: "#3bb3eb",
+                            //   }}
+                            // >
+                            //   Email sent!
+                            // </Typography>
+                          )}
+                        </Box>
                       </div>
                     </div>
                   </div>
