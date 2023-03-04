@@ -32,7 +32,7 @@ function Navigation({ className }) {
                 <Link to="/solutions/modern-workplace">Modern Workplace</Link>
               </li>
               <li>
-                <Link to="/strategy-and-consulting">
+                <Link to="/solutions/strategy-and-consulting">
                   Strategy and Consulting
                 </Link>
               </li>
@@ -124,7 +124,7 @@ function Navigation({ className }) {
             </ul>
           </li>
           <li>
-            <Link to="/our-story">
+            <Link to="#">
               About <i className="fa fa-angle-down" />
             </Link>
             <ul className="sub-menu">
