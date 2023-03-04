@@ -58,8 +58,7 @@ export default function Intro({ id, className }) {
           fontFamily: "Montserrat",
         }}
       >
-        With this service, you'll have access to a team of With this service,
-        you'll have access to a team of{" "}
+        With this service, you'll have access to a team of{" "}
         <span className="color-blue fw-500">experienced</span> IT professionals
         who will help you to implement and manage a robust backup strategy that
         meets the specific needs of your organization.
