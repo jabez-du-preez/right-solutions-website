@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
+import NextLink from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 import svglogo from "../../../../assets/images/svg-logo.svg";
 
 export default function FooterHomeSix() {
@@ -20,7 +20,7 @@ export default function FooterHomeSix() {
                 {/* <div className="center-align"> */}
                 <img
                   className="resize-img"
-                  style={{ margin: "auto auto" }}
+                  style={{ margin: "auhref auhref" }}
                   width="100%"
                   height="100%"
                   src={svglogo}
@@ -34,8 +34,8 @@ export default function FooterHomeSix() {
                       mt: {
                         xs: 2,
                         md: 2,
-                        lg: "auto",
-                        xl: "auto",
+                        lg: "auhref",
+                        xl: "auhref",
                       },
                       ml: {
                         xs: 2,
@@ -70,38 +70,42 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Solutions</h4>
               <ul>
                 <li>
-                  <Link to="/server-infrastructure">Server Infrastructure</Link>
+                  <NextLink href="/server-infrastructure">
+                    Server Infrastructure
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/endpoint-security">End Point Security</Link>
+                  <NextLink href="/endpoint-security">
+                    End Point Security
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/network-infrastructure">
+                  <NextLink href="/network-infrastructure">
                     Network Infrastructure
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/modern-workplace">Modern Workplace</Link>
+                  <NextLink href="/modern-workplace">Modern Workplace</NextLink>
                 </li>
                 <li>
-                  <Link to="/strategy-and-consulting">
+                  <NextLink href="/strategy-and-consulting">
                     Strategy and Consulting
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/voice-solutions">Voice Solutions</Link>
+                  <NextLink href="/voice-solutions">Voice Solutions</NextLink>
                 </li>
                 <li>
-                  <Link to="/backup-solutions">Backup Solutions</Link>
+                  <NextLink href="/backup-solutions">Backup Solutions</NextLink>
                 </li>
                 <li>
-                  <Link to="/email-security">Email Security</Link>
+                  <NextLink href="/email-security">Email Security</NextLink>
                 </li>
                 <li>
-                  <Link to="/outsourced-it">Outsourced IT</Link>
+                  <NextLink href="/outsourced-it">Outsourced IT</NextLink>
                 </li>
                 <li>
-                  <Link to="/co-managed-it">Co-Managed IT</Link>
+                  <NextLink href="/co-managed-it">Co-Managed IT</NextLink>
                 </li>
               </ul>
             </div>
@@ -111,37 +115,45 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Managed Services</h4>
               <ul>
                 <li>
-                  <Link to="/pentesting">Pentesting</Link>
+                  <NextLink href="/pentesting">Pentesting</NextLink>
                 </li>
                 <li>
-                  <Link to="/cyber-incident-response">
+                  <NextLink href="/cyber-incident-response">
                     Cyber Incidient Response
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/managed-siem-and-soc">Managed SIEM and SOC</Link>
+                  <NextLink href="/managed-siem-and-soc">
+                    Managed SIEM and SOC
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/vulnerability-management">
+                  <NextLink href="/vulnerability-management">
                     Vulnerability Management
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/cyber-security-awareness-training">
+                  <NextLink href="/cyber-security-awareness-training">
                     Cyber Security Awareness Training
-                  </Link>
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/phishing-simulation">Phishing Simulation</Link>
+                  <NextLink href="/phishing-simulation">
+                    Phishing Simulation
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/dark-web-monitoring">Dark Web Monitoring</Link>
+                  <NextLink href="/dark-web-monihrefring">
+                    Dark Web Monihrefring
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/firewall-management">Firewall Management</Link>
+                  <NextLink href="/firewall-management">
+                    Firewall Management
+                  </NextLink>
                 </li>
                 <li>
-                  <Link to="/threat-hunting">Threat Hunting</Link>
+                  <NextLink href="/threat-hunting">Threat Hunting</NextLink>
                 </li>
               </ul>
             </div>
@@ -151,13 +163,15 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Cloud Services</h4>
               <ul>
                 <li>
-                  <Link to="/microsoft-365">Microsoft 365</Link>
+                  <NextLink href="/microsoft-365">Microsoft 365</NextLink>
                 </li>
                 <li>
-                  <Link to="/microsoft-azure">Microsoft Azure</Link>
+                  <NextLink href="/microsoft-azure">Microsoft Azure</NextLink>
                 </li>
                 <li>
-                  <Link to="/amazon-web-services">Amazon Web Services</Link>
+                  <NextLink href="/amazon-web-services">
+                    Amazon Web Services
+                  </NextLink>
                 </li>
               </ul>
             </div>
@@ -167,16 +181,16 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">About</h4>
               <ul>
                 <li>
-                  <Link to="/our-story">Our Story</Link>
+                  <NextLink href="/our-shrefry">Our Shrefry</NextLink>
                 </li>
                 <li>
-                  <Link to="/our-approach">Our Approach</Link>
+                  <NextLink href="/our-approach">Our Approach</NextLink>
                 </li>
                 <li>
-                  <Link to="/our-expertise">Our Expertise</Link>
+                  <NextLink href="/our-expertise">Our Expertise</NextLink>
                 </li>
                 <li>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <NextLink href="/contact-us">Contact Us</NextLink>
                 </li>
               </ul>
             </div>
@@ -187,13 +201,13 @@ export default function FooterHomeSix() {
               <ul>
                 <li className="mb-5">
                   <i className="fas fa-phone-alt"></i>{" "}
-                  <a className="ml-10" href="callto:+(+27) 12 345 678">
+                  <a className="ml-10" href="callhref:+(+27) 12 345 678">
                     (+27) 12 345 678
                   </a>
                 </li>
                 <li className="mb-5">
                   <i className="fas fa-envelope"></i>{" "}
-                  <a className="ml-10" href="mailto:info@rightsol.co.za">
+                  <a className="ml-10" href="mailhref:info@rightsol.co.za">
                     info@rightsol.co.za
                   </a>
                 </li>
@@ -217,7 +231,7 @@ export default function FooterHomeSix() {
                 <Typography
                   variant="h5"
                   sx={{
-                    margin: "auto 0.5rem",
+                    margin: "auhref 0.5rem",
                     fontWeight: 400,
                     fontFamily: "Montserrat",
                   }}
@@ -284,11 +298,11 @@ export default function FooterHomeSix() {
               <ul className="list-style-two">
                 <li>
                   <i className="fas fa-phone-alt"></i>{" "}
-                  <a href="callto:+(+27) 12 345 678">(+27) 12 345 678</a>
+                  <a href="callhref:+(+27) 12 345 678">(+27) 12 345 678</a>
                 </li>
                 <li>
                   <i className="fas fa-envelope"></i>{" "}
-                  <a href="mailto:info@rightsol.co.za">info@rightsol.co.za</a>
+                  <a href="mailhref:info@rightsol.co.za">info@rightsol.co.za</a>
                 </li>
               </ul>
             </div>

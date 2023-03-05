@@ -1,0 +1,30 @@
+import React from "react";
+import bannerImage from "../../../assets/images/banners/laptop1.jpg";
+import Layouts from "../../../components/helpers/Layouts";
+import ReusableHero from "../../../components/helpers/ReusableHero";
+import Intro from "./Intro";
+
+export default function EndPoint() {
+  return (
+    <Layouts
+      pageTitle="Let us manage your"
+      highlight="Endpoint Security"
+      bannerImage={bannerImage}
+    >
+      <Intro />
+      <ReusableHero
+        headerText="What is an endpoint?"
+        secondaryText="An endpoint, also known as a client or host, is any device that can be connected to a network and is capable of sending or receiving data. This includes:"
+        listItems={[
+          "Laptops",
+          "Desktop Computers",
+          "Tablets",
+          "Smartphones",
+          "Printers",
+        ]}
+        tertiaryText="and more."
+        backgroundImage="url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80)"
+      />
+    </Layouts>
+  );
+}

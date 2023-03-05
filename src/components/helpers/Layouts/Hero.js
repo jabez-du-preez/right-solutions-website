@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
 
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Hero({
   pageTitle,
@@ -79,7 +79,7 @@ export default function Hero({
                     },
                   }}
                 >
-                  <Link to="/contact-us" style={{ color: "white" }}>
+                  <Link href="/contact-us" style={{ color: "white" }}>
                     {secondButtonText}
                   </Link>
                 </Button>

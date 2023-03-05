@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import NextLink from "next/link";
 
 function Navigation({ className }) {
   return (
@@ -6,139 +6,155 @@ function Navigation({ className }) {
       <div className={`restly-header-main-menu ${className || ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NextLink href="/">Home</NextLink>
           </li>
           <li>
-            <Link to="#">
+            <NextLink href="#">
               Solutions <i className="fa fa-angle-down" />
-            </Link>
+            </NextLink>
             <ul className="sub-menu">
               <li>
-                <Link to="/solutions/server-infrastructure">
+                <NextLink href="/solutions/server-infrastructure">
                   Server Infrastructure
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/endpoint-security">
+                <NextLink href="/solutions/endpoint-security">
                   End Point Security
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/network-infrastructure">
+                <NextLink href="/solutions/network-infrastructure">
                   Network Infrastructure
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/modern-workplace">Modern Workplace</Link>
+                <NextLink href="/solutions/modern-workplace">
+                  Modern Workplace
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/strategy-and-consulting">
+                <NextLink href="/solutions/strategy-and-consulting">
                   Strategy and Consulting
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/voice-solutions">Voice Solutions</Link>
+                <NextLink href="/solutions/voice-solutions">
+                  Voice Solutions
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/backup-solutions">Backup Solutions</Link>
+                <NextLink href="/solutions/backup-solutions">
+                  Backup Solutions
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/email-security">Email Security</Link>
+                <NextLink href="/solutions/email-security">
+                  Email Security
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/outsourced-it">Outsourced IT</Link>
+                <NextLink href="/solutions/outsourced-it">
+                  Outsourced IT
+                </NextLink>
               </li>
               <li>
-                <Link to="/solutions/co-managed-it">Co-Managed IT</Link>
+                <NextLink href="/solutions/co-managed-it">
+                  Co-Managed IT
+                </NextLink>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="#">
+            <NextLink href="#">
               Managed Services <i className="fa fa-angle-down" />
-            </Link>
+            </NextLink>
             <ul className="sub-menu">
               <li>
-                <Link to="/managed-services/pentesting">Pentesting</Link>
+                <NextLink href="/managed-services/pentesting">
+                  Pentesting
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/cyber-incident-response">
+                <NextLink href="/managed-services/cyber-incident-response">
                   Cyber Incidient Response
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/managed-siem-and-soc">
+                <NextLink href="/managed-services/managed-siem-and-soc">
                   Managed SIEM and SOC
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/vulnerability-management">
+                <NextLink href="/managed-services/vulnerability-management">
                   Vulnerability Management
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/cyber-security-awareness-training">
+                <NextLink href="/managed-services/cyber-security-awareness-training">
                   Cyber Security Awareness Training
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/phishing-simulation">
+                <NextLink href="/managed-services/phishing-simulation">
                   Phishing Simulation
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/dark-web-monitoring">
-                  Dark Web Monitoring
-                </Link>
+                <NextLink href="/managed-services/dark-web-monihrefring">
+                  Dark Web Monihrefring
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/firewall-management">
+                <NextLink href="/managed-services/firewall-management">
                   Firewall Management
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/managed-services/threat-hunting">
+                <NextLink href="/managed-services/threat-hunting">
                   Threat Hunting
-                </Link>
+                </NextLink>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="#">
+            <NextLink href="#">
               Cloud Services <i className="fa fa-angle-down" />
-            </Link>
+            </NextLink>
             <ul className="sub-menu">
               <li>
-                <Link to="/cloud-services/microsoft-365">Microsoft 365</Link>
+                <NextLink href="/cloud-services/microsoft-365">
+                  Microsoft 365
+                </NextLink>
               </li>
               <li>
-                <Link to="/cloud-services/microsoft-azure">
+                <NextLink href="/cloud-services/microsoft-azure">
                   Microsoft Azure
-                </Link>
+                </NextLink>
               </li>
               <li>
-                <Link to="/cloud-services/amazon-web-services">
+                <NextLink href="/cloud-services/amazon-web-services">
                   Amazon Web Services
-                </Link>
+                </NextLink>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="#">
+            <NextLink href="#">
               About <i className="fa fa-angle-down" />
-            </Link>
+            </NextLink>
             <ul className="sub-menu">
               <li>
-                <Link to="/about/our-story">About Us</Link>
+                <NextLink href="/about/our-shrefry">About Us</NextLink>
               </li>
               {/* <li>
-                <Link to="#our-approach">Our Approach</Link>
+                <NextLink href="#our-approach">Our Approach</NextLink>
               </li>
               <li>
-                <Link to="#our-expertise">Our Expertise</Link>
+                <NextLink href="#our-expertise">Our Expertise</NextLink>
               </li> */}
               <li>
-                <Link to="/about/contact-us">Contact Us</Link>
+                <NextLink href="/about/contact-us">Contact Us</NextLink>
               </li>
             </ul>
           </li>

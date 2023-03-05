@@ -1,15 +1,14 @@
+import NextLink from "next/link";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../../../assets/images/logos/RS Logo - Blue.png";
 import StickyMenu from "../../../lib/StickyMenu";
-import "./style.css";
 
 function Drawer({ drawer, action }) {
   const [itemSize, setSize] = useState("0px");
   const [item, setItem] = useState("");
   const handler = (e, value) => {
     // e.preventDefault();
-    const getItems = document.querySelectorAll(`#${value} li`).length;
+    const getItems = document.querySelechrefrAll(`#${value} li`).length;
     if (getItems > 0) {
       if (item !== value) {
         setSize(`${50 * getItems}px`);
@@ -67,42 +66,54 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/server-infrastructure">
+                          <NextLink href="/server-infrastructure">
                             Server Infrastructure
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/endpoint-security">
+                          <NextLink href="/endpoint-security">
                             End Point Security
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/network-infrastructure">
+                          <NextLink href="/network-infrastructure">
                             Network Infrastructure
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/modern-workplace">Modern Workplace</Link>
+                          <NextLink href="/modern-workplace">
+                            Modern Workplace
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/strategy-and-consulting">
+                          <NextLink href="/strategy-and-consulting">
                             Strategy and Consulting
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/voice-solutions">Voice Solutions</Link>
+                          <NextLink href="/voice-solutions">
+                            Voice Solutions
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/backup-solutions">Backup Solutions</Link>
+                          <NextLink href="/backup-solutions">
+                            Backup Solutions
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/email-security">Email Security</Link>
+                          <NextLink href="/email-security">
+                            Email Security
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/outsourced-it">Outsourced IT</Link>
+                          <NextLink href="/outsourced-it">
+                            Outsourced IT
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/co-managed-it">Co-Managed IT</Link>
+                          <NextLink href="/co-managed-it">
+                            Co-Managed IT
+                          </NextLink>
                         </li>
                       </ul>
                     </li>
@@ -122,45 +133,47 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/pentesting">Pentesting</Link>
+                          <NextLink href="/pentesting">Pentesting</NextLink>
                         </li>
                         <li>
-                          <Link to="/cyber-incident-response">
+                          <NextLink href="/cyber-incident-response">
                             Cyber Incidient Response
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/managed-siem-and-soc">
+                          <NextLink href="/managed-siem-and-soc">
                             Managed SIEM and SOC
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/vulnerability-management">
+                          <NextLink href="/vulnerability-management">
                             Vulnerability Management
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/cyber-security-awareness-training">
+                          <NextLink href="/cyber-security-awareness-training">
                             Cyber Security Awareness Training
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/phishing-simulation">
+                          <NextLink href="/phishing-simulation">
                             Phishing Simulation
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/dark-web-monitoring">
-                            Dark Web Monitoring
-                          </Link>
+                          <NextLink href="/dark-web-monihrefring">
+                            Dark Web Monihrefring
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/firewall-management">
+                          <NextLink href="/firewall-management">
                             Firewall Management
-                          </Link>
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/threat-hunting">Threat Hunting</Link>
+                          <NextLink href="/threat-hunting">
+                            Threat Hunting
+                          </NextLink>
                         </li>
                       </ul>
                     </li>
@@ -180,15 +193,19 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/microsoft-365">Microsoft 365</Link>
+                          <NextLink href="/microsoft-365">
+                            Microsoft 365
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/microsoft-azure">Microsoft Azure</Link>
+                          <NextLink href="/microsoft-azure">
+                            Microsoft Azure
+                          </NextLink>
                         </li>
                         <li>
-                          <Link to="/amazon-web-services">
+                          <NextLink href="/amazon-web-services">
                             Amazon Web Services
-                          </Link>
+                          </NextLink>
                         </li>
                       </ul>
                     </li>
@@ -208,11 +225,11 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/our-story">About Us</Link>
+                          <NextLink href="/our-shrefry">About Us</NextLink>
                         </li>
 
                         <li>
-                          <Link to="/contact-us">Contact Us</Link>
+                          <NextLink href="/contact-us">Contact Us</NextLink>
                         </li>
                       </ul>
                     </li>
@@ -232,10 +249,10 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/blog">Blog Page</Link>
+                          <NextLink href="/blog">Blog Page</NextLink>
                         </li>
                         <li>
-                          <Link to="/blog/blog-details">Blog Details</Link>
+                          <NextLink href="/blog/blog-details">Blog Details</NextLink>
                         </li>
                       </ul>
                     </li>
@@ -244,7 +261,7 @@ function Drawer({ drawer, action }) {
                       id="contact"
                       className="menu-item-has-children active"
                     >
-                      <Link to="/contact">Contact</Link>
+                      <NextLink href="/contact">Contact</NextLink>
                     </li> */}
                   </ul>
                 </div>
@@ -275,7 +292,7 @@ function Drawer({ drawer, action }) {
                 <div className="footer-widget-info">
                   <ul>
                     <li className="mb-1">
-                      <a href="mailto:info@rightsolutions.co.za">
+                      <a href="mailhref:info@rightsolutions.co.za">
                         <i className="fa fa-envelope mr-2"></i>
                         info@rightsolutions.co.za
                       </a>
