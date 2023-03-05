@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.50fbfb30.chunk.css",
+    "main.css": "/static/css/main.36dc9116.chunk.css",
     "main.js": "/static/js/main.32ccb23e.chunk.js",
     "main.js.map": "/static/js/main.32ccb23e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.db132dc1.js",
@@ -12,7 +12,7 @@
     "static/js/3.d9501857.chunk.js.map": "/static/js/3.d9501857.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0c6d2c39.chunk.css.map": "/static/css/2.0c6d2c39.chunk.css.map",
-    "static/css/main.50fbfb30.chunk.css.map": "/static/css/main.50fbfb30.chunk.css.map",
+    "static/css/main.36dc9116.chunk.css.map": "/static/css/main.36dc9116.chunk.css.map",
     "static/js/2.0a13f508.chunk.js.LICENSE.txt": "/static/js/2.0a13f508.chunk.js.LICENSE.txt",
     "static/media/404.23790b2e.png": "/static/media/404.23790b2e.png",
     "static/media/d_flaticon.css": "/static/media/Flaticon.fa73202b.woff",
@@ -43,7 +43,7 @@
     "static/js/runtime-main.db132dc1.js",
     "static/css/2.0c6d2c39.chunk.css",
     "static/js/2.0a13f508.chunk.js",
-    "static/css/main.50fbfb30.chunk.css",
+    "static/css/main.36dc9116.chunk.css",
     "static/js/main.32ccb23e.chunk.js"
   ]
 }
