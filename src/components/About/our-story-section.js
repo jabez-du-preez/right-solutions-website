@@ -104,8 +104,8 @@ export default function StorySection({ id }) {
               </div>
               <h4 className="color-black">Our Mission</h4>
               <p className="color-black">
-                To provide the best customer-centric managed solutions that no
-                only transforms clients digital initiatives but improves their
+                To provide the best customer-centric managed solutions that not
+                only transform clients digital initiatives but improves their
                 efficiency and business profitability with an emphasis on
                 keeping them secure.
               </p>

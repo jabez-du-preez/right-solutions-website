@@ -26,16 +26,16 @@ export default function HomeSix() {
       id: 2,
       header: "Server Infrastructure",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
+        "We provide server infrastructure services to protect aid your day-to-day business.",
       href: "/solutions/server-infrastructure",
       icon: "fa-server",
       iconColor: "bg-orange",
     },
     {
       id: 3,
-      header: "Threat Hunting",
+      header: "Backup Solutions",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
+        "We provide backup solutions to protect your business from any data loss.",
       href: "/managed-services/threat-hunting",
       icon: "fa-user-ninja",
       iconColor: "bg-red",
@@ -44,7 +44,7 @@ export default function HomeSix() {
       id: 4,
       header: "End Point Security",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
+        "We provide end point security services to protect your users from cyber threats.",
       href: "/solutions/endpoint-security",
       icon: "fa-computer",
       iconColor: "bg-purple",
@@ -53,8 +53,8 @@ export default function HomeSix() {
       id: 5,
       header: "Network Infrastructure",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
-      href: "/solutions/network-infrastrucutre",
+        "We provide network infrastructure services to keep your network secure.",
+      href: "/solutions/network-infrastructure",
       icon: "fa-diagram-project",
       iconColor: "bg-blue",
     },
@@ -62,7 +62,7 @@ export default function HomeSix() {
       id: 6,
       header: "Modern Workplace",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
+        "We provide modern workplace solutions to keep your users working anywhere.",
       href: "/solutions/modern-workplace",
       icon: "fa-briefcase",
       iconColor: "bg-yellow",
