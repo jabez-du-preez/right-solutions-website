@@ -5,7 +5,6 @@ import Layouts from "../helpers/Layouts";
 import ReusableService from "../helpers/ReusableService";
 // import ReusableHero from "../helpers/ReusableHero";
 import CounterSection from "./CounterSection";
-import OurServices from "./OurServices";
 
 export default function HomeSix() {
   const scroll = () => {
@@ -19,7 +18,7 @@ export default function HomeSix() {
       header: "Cyber Security",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/endpoint-security",
+      href: "/managed-services/cyber-security",
       icon: "fa-user-secret",
       iconColor: "bg-green",
     },
@@ -28,7 +27,7 @@ export default function HomeSix() {
       header: "Server Infrastructure",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/server-infrastructure",
+      href: "/solutions/server-infrastructure",
       icon: "fa-server",
       iconColor: "bg-orange",
     },
@@ -37,7 +36,7 @@ export default function HomeSix() {
       header: "Threat Hunting",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/threat-hunting",
+      href: "/managed-services/threat-hunting",
       icon: "fa-user-ninja",
       iconColor: "bg-red",
     },
@@ -46,7 +45,7 @@ export default function HomeSix() {
       header: "End Point Security",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/endpoint-security",
+      href: "/solutions/endpoint-security",
       icon: "fa-computer",
       iconColor: "bg-purple",
     },
@@ -55,7 +54,7 @@ export default function HomeSix() {
       header: "Network Infrastructure",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/network-infrastrucutre",
+      href: "/solutions/network-infrastrucutre",
       icon: "fa-diagram-project",
       iconColor: "bg-blue",
     },
@@ -64,7 +63,7 @@ export default function HomeSix() {
       header: "Modern Workplace",
       explaination:
         "We provide cyber security services to protect your business from cyber threats.",
-      href: "/modern-workplace",
+      href: "/solutions/modern-workplace",
       icon: "fa-briefcase",
       iconColor: "bg-yellow",
     },
@@ -93,7 +92,7 @@ export default function HomeSix() {
           numberOfSlidesToScroll={1}
           numberOfSlidesToShow={3}
         />
-        <OurServices id="what-we-do" />
+        {/* <OurServices id="what-we-do" /> */}
         <CounterSection />
         <BacktoTopCom className=".main-header" />
       </Layouts>

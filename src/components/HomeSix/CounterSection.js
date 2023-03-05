@@ -35,52 +35,45 @@ export default function CounterSection() {
           </Typography>
         </div>
         <div className="row">
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-6">
             <div className="success-item circle-style wow fadeInUp delay-0-2s">
-              <span className="count-text k" data-speed="5000" data-stop="35">
+              <span
+                className="count-text plus"
+                data-speed="5000"
+                data-stop="10"
+              >
                 <CounterUp
-                  endValue="35"
+                  endValue="10"
                   sectionSelect="counter-section-three"
                 />
               </span>
-              <span>Complate</span>
+              <span>Networks</span>
             </div>
           </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="success-item circle-style wow fadeInUp delay-0-4s color-two">
-              <span className="count-text k" data-speed="5000" data-stop="34">
-                <CounterUp
-                  endValue="34"
-                  sectionSelect="counter-section-three"
-                />
-              </span>
-              <span>Trusted Users</span>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-6">
             <div className="success-item circle-style wow fadeInUp delay-0-6s color-three">
               <span
                 className="count-text plus"
                 data-speed="5000"
-                data-stop="119"
+                data-stop="500"
               >
                 <CounterUp
-                  endValue="119"
+                  endValue="500"
                   sectionSelect="counter-section-three"
                 />
               </span>
-              <span>Awards</span>
+              <span>Users</span>
             </div>
           </div>
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-6">
             <div className="success-item circle-style wow fadeInUp delay-0-8s color-four">
               <span
                 className="count-text plus"
                 data-speed="5000"
-                data-stop="119"
+                data-stop="10"
               >
                 <CounterUp
-                  endValue="300"
+                  endValue="10"
                   sectionSelect="counter-section-three"
                 />
               </span>
