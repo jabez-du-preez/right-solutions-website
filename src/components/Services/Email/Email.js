@@ -15,9 +15,22 @@ export default function Email() {
       threats.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#email-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Layouts bannerImage="https://images.unsplash.com/photo-1522096823084-2d1aa8411c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80">
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1522096823084-2d1aa8411c13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      pageTitle="Email Security"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      showSecondButton
+    >
+      <Intro id="email-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

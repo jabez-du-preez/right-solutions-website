@@ -16,10 +16,22 @@ export default function Amazon() {
       support its business needs.
     </span>
   );
+  const scroll = () => {
+    const hero = document.querySelector("#amazon-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <Layouts bannerImage="https://images.unsplash.com/photo-1583505093722-15596e9ada6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80">
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1583505093722-15596e9ada6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      pageTitle="Amazon Web Services"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      scroll={scroll}
+      showButton
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="amazon-intro" />
       <OurRange />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />

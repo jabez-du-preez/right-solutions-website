@@ -5,13 +5,21 @@ import ReusableHero from "../../helpers/ReusableHero";
 import Intro from "./Intro";
 
 export default function EndPoint() {
+  const scroll = () => {
+    const hero = document.querySelector("#endpoint-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Layouts
       pageTitle="Let us manage your"
       highlight="Endpoint Security"
       bannerImage={bannerImage}
+      showButton
+      buttonText="Learn More"
+      scrollToComponent={scroll}
+      showSecondButton
     >
-      <Intro />
+      <Intro id="endpoint-intro" />
       <ReusableHero
         headerText="What is an endpoint?"
         secondaryText="An endpoint, also known as a client or host, is any device that can be connected to a network and is capable of sending or receiving data. This includes:"

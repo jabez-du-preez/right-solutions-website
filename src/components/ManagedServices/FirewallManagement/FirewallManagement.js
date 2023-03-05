@@ -15,9 +15,20 @@ export default function FirewallManagement() {
       are being properly protected by your firewall systems.{" "}
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#firewall-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage={bannerImage}
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="firewall-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

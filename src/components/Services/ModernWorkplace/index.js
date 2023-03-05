@@ -7,7 +7,7 @@ import ModernSolutions from "./ModernSolutions";
 export default function ModernWorkplace() {
   const scroll = () => {
     const hero = document.querySelector("#modern-workplace-intro");
-    hero.scrollIntoView({ behavior: "smooth", block: "center" });
+    hero.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -19,6 +19,7 @@ export default function ModernWorkplace() {
       buttonText="Learn More"
       showButton
       scrollToComponent={scroll}
+      showSecondButton
     >
       <Intro id="modern-workplace-intro" />
       <ModernSolutions />

@@ -15,9 +15,19 @@ export default function DarkWeb() {
       continuously monitored and protected.
     </span>
   );
+  const scroll = () => {
+    const hero = document.querySelector("#darkweb-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Layouts bannerImage="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80">
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="darkweb-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

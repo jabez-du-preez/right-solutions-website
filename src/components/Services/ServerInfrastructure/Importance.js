@@ -1,15 +1,12 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Card from "../../helpers/Card";
+import CustomDivider from "../../helpers/CustomDivider";
 
-export default function Importance() {
+export default function Importance({ id }) {
   return (
     <>
-      <div className="display-flex justify-content-center mt-50 mb-50">
-        <div className="feature-line occilate">
-          <span className="animate-bar "></span>
-        </div>
-      </div>
+      <CustomDivider />
       <Container
         maxWidth="lg"
         sx={{
@@ -17,6 +14,7 @@ export default function Importance() {
         }}
       >
         <Typography
+          id={id}
           className="sub-title color-blue"
           variant="h5"
           textAlign="center"

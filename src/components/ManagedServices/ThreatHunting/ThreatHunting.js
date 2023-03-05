@@ -16,9 +16,21 @@ export default function ThreatHunting() {
       and data.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#threat-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage={bannerImage}
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="threat-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

@@ -5,6 +5,7 @@ export default function Intro({ id }) {
   return (
     <Box
       id={id}
+      className="scroll-margin-150"
       sx={{
         mt: 7,
         mb: 9,

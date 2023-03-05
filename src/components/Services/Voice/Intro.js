@@ -33,9 +33,9 @@ export default function Intro({ id }) {
         }}
       >
         We assist companies with{" "}
-        <span className="color-blue fw-400">on-premises</span> and{" "}
-        <span className="color-blue fw-400">on-premises</span> VOIP (Voice Over
-        Internet Protocol) solutions.
+        <span className="color-blue fw-500">on-premises</span> and{" "}
+        <span className="color-blue fw-500">cloud-based VOIP </span> VOIP (Voice
+        Over Internet Protocol) solutions.
       </Typography>
       <div className="display-flex justify-content-center mt-50 mb-50">
         <div className="feature-line occilate">

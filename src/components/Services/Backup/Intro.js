@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import CustomDivider from "../../helpers/CustomDivider";
 
-export default function Intro({ id, className }) {
+export default function Intro({ id }) {
   return (
     <Box
       id={id}
-      className={className}
+      className="scroll-margin-150"
       sx={{
         mt: 7,
         mb: 9,
@@ -37,11 +38,7 @@ export default function Intro({ id, className }) {
         <span className="color-blue fw-500">secure</span> way to protect their
         data.
       </Typography>
-      <div className="display-flex justify-content-center mt-50 mb-50">
-        <div className="feature-line occilate">
-          <span className="animate-bar "></span>
-        </div>
-      </div>
+      <CustomDivider />
       <Typography
         variant="h4"
         textAlign="center"

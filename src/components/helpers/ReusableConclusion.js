@@ -19,9 +19,9 @@ export default function ReusableConclusion({ conclusion }) {
         variant="h4"
         textAlign="center"
         sx={{
-          fontWeight: 300,
+          fontWeight: 400,
           fontSize: {
-            xs: "1rem",
+            xs: "1.25rem",
             sm: "1.25rem",
             md: "1.25rem",
             lg: "1.5rem",

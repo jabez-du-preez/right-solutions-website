@@ -15,9 +15,21 @@ export default function SecurityAwareness() {
       cyber threats.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#awareness-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage={bannerImage}
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="awareness-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

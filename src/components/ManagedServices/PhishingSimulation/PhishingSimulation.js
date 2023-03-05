@@ -15,9 +15,20 @@ export default function PhishingSimulation() {
       that your organization is better protected from these types of threats.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#phishing-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Layouts bannerImage="https://images.unsplash.com/photo-1583249598754-b7a2f59651fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80">
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1583249598754-b7a2f59651fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="phishing-intro" />
       <OurOffers />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

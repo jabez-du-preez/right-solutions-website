@@ -25,10 +25,13 @@ export default function Voice() {
   return (
     <Layouts
       bannerImage="https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80"
-      pageTitle="Imagine being able to take your business phone system on the go!"
+      pageTitle="Imagine being able to take your  "
+      highlight="business phone system"
+      pageTitleContinued="on the go!"
       showButton
       buttonText="Learn More"
       scrollToComponent={scroll}
+      showSecondButton
     >
       <Intro id="voice-intro" />
       <OurVOIP />

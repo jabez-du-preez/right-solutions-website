@@ -17,9 +17,23 @@ export default function Microsoft365() {
       support its business needs.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#365-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage={bannerImage}
+      pageTitle="Microsoft 365"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      scroll={scroll}
+      showButton
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="365-intro" />
       <OurRange />
       <OurOffers />
       <CustomDivider />

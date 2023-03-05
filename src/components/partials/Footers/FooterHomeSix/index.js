@@ -6,7 +6,7 @@ import svglogo from "../../../../assets/images/svg-logo.svg";
 export default function FooterHomeSix() {
   const year = new Date().getFullYear();
   return (
-    <footer className="main-footer footer-five bg-lighter pt-75">
+    <footer className="main-footer footer-five bg-lighter pt-25">
       <div className="container">
         <Grid container spacing={1}>
           <Grid item xs={12} md={4} lg={2} xl={2}>

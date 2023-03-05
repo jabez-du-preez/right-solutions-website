@@ -83,13 +83,12 @@ export default function HomeSix() {
         showButton
         scrollToComponent={scroll}
         showSecondButton
-        secondButtonText="Contact Us"
       >
         <ReusableService
           id="services-cards"
           className="scroll-margin-100"
           items={cardItems}
-          heading="We have a diverse presence across various industries."
+          heading="We have a diverse presence across various industries"
           showReadMore
           numberOfSlidesToScroll={1}
           numberOfSlidesToShow={3}

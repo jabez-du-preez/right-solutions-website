@@ -314,6 +314,22 @@
   all: revert;
 }
 
+.scroll-margin-0 {
+  scroll-margin: 0px;
+}
+
+.scroll-margin--50 {
+  scroll-margin: -50px;
+}
+
+.scroll-margin--100 {
+  scroll-margin: -100px;
+}
+
+.scroll-margin--150 {
+  scroll-margin: -150px;
+}
+
 .scroll-margin-100 {
   scroll-margin: 95px;
 }
@@ -324,6 +340,18 @@
 
 .scroll-margin-200 {
   scroll-margin: 200px;
+}
+
+.scroll-margin-250 {
+  scroll-margin: 250px;
+}
+
+.scroll-margin-300 {
+  scroll-margin: 300px;
+}
+
+.scroll-margin-350 {
+  scroll-margin: 350px;
 }
 
 .margin-x-auto {
@@ -386,12 +414,11 @@
   background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
   padding: 0 5rem;
-  margin: 0 0;
   transition: all 0.3s ease-in-out;
 }
 
 .reusable-hero-text:hover {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgb(225, 245, 255, 0.9);
 }
 
 .card-icon {
@@ -481,6 +508,10 @@
   .height-500 {
     height: 500px;
   }
+
+  .reuseable-hero-text {
+    padding: 0 3rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .page-sub-title {
@@ -517,6 +548,10 @@
   .height-500 {
     height: 500px;
   }
+
+  .reusable-hero-text {
+    padding: 0 3rem;
+  }
 }
 @media only screen and (max-width: 375px) {
   .page-sub-title {
@@ -545,6 +580,10 @@
 
   .feature-line {
     width: 3rem;
+  }
+
+  .reusable-hero-text {
+    padding: 0 3rem;
   }
 }
 
@@ -596,6 +635,11 @@
 
   .feature-line {
     width: 12rem;
+  }
+
+  .reusable-hero-text {
+    padding: 0 3rem;
+    text-align: center;
   }
 }
 

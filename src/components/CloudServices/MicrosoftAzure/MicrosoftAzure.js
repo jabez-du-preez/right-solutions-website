@@ -21,12 +21,14 @@ export default function MicrosoftAzure() {
       support its business needs.
     </span>
   );
+
   return (
     <Layouts
       bannerImage={bannerImage}
       pageTitle="Microsoft Azure?"
       highlight="We do that too!"
       showButton
+      showSecondButton
       buttonText="Learn more"
       scrollToComponent={scroll}
     >

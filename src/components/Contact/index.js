@@ -84,7 +84,7 @@ export default function Contact() {
     <>
       <section
         style={{ backgroundColor: "white" }}
-        className="contact-page pt-60 py-10 rpy-100"
+        className="contact-page pt-60 py-10 rpy-100 pb-75"
       >
         <div className="container">
           <div className="row">
@@ -101,11 +101,7 @@ export default function Contact() {
             <div className="col-lg-8">
               <div className="contact-form ml-40 rml-0 rmt-55 wow fadeInRight delay-0-2s">
                 <h3 className="comment-title mb-35">Contact Us Today</h3>
-                <p>
-                  Avoids pleasure itself, because it is pleasure, but because
-                  those who do not know how to pursue pleasure rationally
-                  encounter.
-                </p>
+                <p>We're here to help, always. Contact us now!</p>
                 <form
                   ref={form}
                   id="email-form"

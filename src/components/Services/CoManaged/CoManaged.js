@@ -15,9 +15,23 @@ export default function CoManaged() {
       professionals.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#co-managed-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Layouts bannerImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80">
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      pageTitle="Co-Managed IT"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      showSecondButton
+    >
+      <Intro id="co-managed-intro" />
       <OurRange />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

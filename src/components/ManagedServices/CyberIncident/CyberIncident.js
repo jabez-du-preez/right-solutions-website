@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImage from "../../../assets/images/banners/incident.jpg";
+// import bannerImage from "../../../assets/images/banners/incident.jpg";
 import Layouts from "../../helpers/Layouts";
 import ReusableConclusion from "../../helpers/ReusableConclusion";
 import Intro from "./Intro";
@@ -16,9 +16,19 @@ export default function CyberIncident() {
       organization and get you back to business as quickly as possible.
     </span>
   );
+  const scroll = () => {
+    const hero = document.querySelector("#cyber-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage="https://images.unsplash.com/photo-1531570003789-62d56ed3b271?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+      showButton
+      scrollToComponent={scroll}
+      buttonText="Learn More"
+      showSecondButton
+    >
+      <Intro id="cyber-intro" />
       <OurOffer />
       <ReusableConclusion conclusion={conclusion} />
     </Layouts>

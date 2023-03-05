@@ -15,9 +15,23 @@ export default function Backup() {
       <span className="color-blue fw-500">always available</span> when needed.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#backup-intro");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <Layouts bannerImage={bannerImage}>
-      <Intro />
+    <Layouts
+      bannerImage={bannerImage}
+      buttonText="Learn More"
+      showButton
+      scrollToComponent={scroll}
+      pageTitle="Managed Backup"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      showSecondButton
+    >
+      <Intro id="backup-intro" />
       <Solutions />
       <CustomDivider />
       <ReusableConclusion conclusion={conclusion} />

@@ -14,7 +14,6 @@ export default function Hero({
   showButton,
   scrollToComponent,
   showSecondButton,
-  secondButtonText,
 }) {
   return (
     <section
@@ -22,7 +21,6 @@ export default function Hero({
       style={{
         backgroundImage: `url(${bannerImage})`,
         backgroundAttachment: "fixed",
-        backgroundPositionY: "center",
       }}
     >
       <div className="container">
@@ -79,8 +77,8 @@ export default function Hero({
                     },
                   }}
                 >
-                  <Link to="/contact-us" style={{ color: "white" }}>
-                    {secondButtonText}
+                  <Link to="/about/contact-us" style={{ color: "white" }}>
+                    Contact Us
                   </Link>
                 </Button>
               )}

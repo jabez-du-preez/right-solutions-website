@@ -20,13 +20,26 @@ export default function ServerInfrastructure() {
       of today and tomorrow.
     </span>
   );
+
+  const scroll = () => {
+    const hero = document.querySelector("#server-infrastructure-importance");
+    hero.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Layouts
       pageTitle="We Do"
       highlight="IT"
+      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      showButton
+      buttonText="Learn More"
+      scrollToComponent={scroll}
       bannerImage="https://images.unsplash.com/photo-1580106815433-a5b1d1d53d85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+      showSecondButton
     >
       <Box
+        id="server-infrastructure-importance"
+        className="scroll-margin-150"
         sx={{
           mt: 7,
           padding: {
