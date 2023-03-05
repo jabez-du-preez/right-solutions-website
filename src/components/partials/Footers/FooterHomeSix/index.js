@@ -70,38 +70,42 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Solutions</h4>
               <ul>
                 <li>
-                  <Link to="/server-infrastructure">Server Infrastructure</Link>
+                  <Link to="/solutions/server-infrastructure">
+                    Server Infrastructure
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/endpoint-security">End Point Security</Link>
+                  <Link to="/solutions/endpoint-security">
+                    End Point Security
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/network-infrastructure">
+                  <Link to="/solutions/network-infrastructure">
                     Network Infrastructure
                   </Link>
                 </li>
                 <li>
-                  <Link to="/modern-workplace">Modern Workplace</Link>
+                  <Link to="/solutions/modern-workplace">Modern Workplace</Link>
                 </li>
                 <li>
-                  <Link to="/strategy-and-consulting">
+                  <Link to="/solutions/strategy-and-consulting">
                     Strategy and Consulting
                   </Link>
                 </li>
                 <li>
-                  <Link to="/voice-solutions">Voice Solutions</Link>
+                  <Link to="/solutions/voice-solutions">Voice Solutions</Link>
                 </li>
                 <li>
-                  <Link to="/backup-solutions">Backup Solutions</Link>
+                  <Link to="/solutions/backup-solutions">Backup Solutions</Link>
                 </li>
                 <li>
-                  <Link to="/email-security">Email Security</Link>
+                  <Link to="/solutions/email-security">Email Security</Link>
                 </li>
                 <li>
-                  <Link to="/outsourced-it">Outsourced IT</Link>
+                  <Link to="/solutions/outsourced-it">Outsourced IT</Link>
                 </li>
                 <li>
-                  <Link to="/co-managed-it">Co-Managed IT</Link>
+                  <Link to="/solutions/co-managed-it">Co-Managed IT</Link>
                 </li>
               </ul>
             </div>
@@ -111,37 +115,47 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Managed Services</h4>
               <ul>
                 <li>
-                  <Link to="/pentesting">Pentesting</Link>
+                  <Link to="/managed-services/pentesting">Pentesting</Link>
                 </li>
                 <li>
-                  <Link to="/cyber-incident-response">
+                  <Link to="/managed-services/cyber-incident-response">
                     Cyber Incidient Response
                   </Link>
                 </li>
                 <li>
-                  <Link to="/managed-siem-and-soc">Managed SIEM and SOC</Link>
+                  <Link to="/managed-services/managed-siem-and-soc">
+                    Managed SIEM and SOC
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/vulnerability-management">
+                  <Link to="/managed-services/vulnerability-management">
                     Vulnerability Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/cyber-security-awareness-training">
+                  <Link to="/managed-services/cyber-security-awareness-training">
                     Cyber Security Awareness Training
                   </Link>
                 </li>
                 <li>
-                  <Link to="/phishing-simulation">Phishing Simulation</Link>
+                  <Link to="/managed-services/phishing-simulation">
+                    Phishing Simulation
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/dark-web-monitoring">Dark Web Monitoring</Link>
+                  <Link to="/managed-services/dark-web-monitoring">
+                    Dark Web Monitoring
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/firewall-management">Firewall Management</Link>
+                  <Link to="/managed-services/firewall-management">
+                    Firewall Management
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/threat-hunting">Threat Hunting</Link>
+                  <Link to="/managed-services/threat-hunting">
+                    Threat Hunting
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -151,13 +165,17 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">Cloud Services</h4>
               <ul>
                 <li>
-                  <Link to="/microsoft-365">Microsoft 365</Link>
+                  <Link to="/cloud-services/microsoft-365">Microsoft 365</Link>
                 </li>
                 <li>
-                  <Link to="/microsoft-azure">Microsoft Azure</Link>
+                  <Link to="/cloud-services/microsoft-azure">
+                    Microsoft Azure
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/amazon-web-services">Amazon Web Services</Link>
+                  <Link to="/cloud-services/amazon-web-services">
+                    Amazon Web Services
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -167,16 +185,10 @@ export default function FooterHomeSix() {
               <h4 className="footer-title">About</h4>
               <ul>
                 <li>
-                  <Link to="/our-story">Our Story</Link>
+                  <Link to="/about/our-story">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/our-approach">Our Approach</Link>
-                </li>
-                <li>
-                  <Link to="/our-expertise">Our Expertise</Link>
-                </li>
-                <li>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <Link to="/about/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>
