@@ -8,7 +8,7 @@ function Drawer({ drawer, action }) {
   const [itemSize, setSize] = useState("0px");
   const [item, setItem] = useState("");
   const handler = (e, value) => {
-    // e.preventDefault();
+    e.preventDefault();
     const getItems = document.querySelectorAll(`#${value} li`).length;
     if (getItems > 0) {
       if (item !== value) {
@@ -22,6 +22,7 @@ function Drawer({ drawer, action }) {
   useEffect(() => {
     StickyMenu(".off_canvars_overlay");
   });
+
   return (
     <>
       <div
@@ -236,62 +237,9 @@ function Drawer({ drawer, action }) {
                         </li>
                       </ul>
                     </li>
-                    {/* <li
-                      onClick={(e) => handler(e, "Blogs")}
-                      id="Blogs"
-                      className="menu-item-has-children active"
-                    >
-                      <span className="menu-expand">
-                        <i className="fa fa-angle-down"></i>
-                      </span>
-                      <a href="#">Blog</a>
-                      <ul
-                        className="sub-menu"
-                        style={{
-                          height: item === "Blogs" ? itemSize : "0px",
-                        }}
-                      >
-                        <li>
-                          <Link to="/blog">Blog Page</Link>
-                        </li>
-                        <li>
-                          <Link to="/blog/blog-details">Blog Details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li
-                      onClick={(e) => handler(e, "contact")}
-                      id="contact"
-                      className="menu-item-has-children active"
-                    >
-                      <Link to="/contact">Contact</Link>
-                    </li> */}
                   </ul>
                 </div>
-                {/* <div className="offcanvas-social">
-                  <ul className="text-center">
-                    <li>
-                      <a href="$">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="$">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="$">
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="$">
-                        <i className="fab fa-dribbble"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div> */}
+
                 <div className="footer-widget-info">
                   <ul>
                     <li className="mb-1">
