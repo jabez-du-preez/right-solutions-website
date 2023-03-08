@@ -84,7 +84,7 @@ export default function ServerInfrastructure() {
             fontFamily: "Montserrat",
           }}
         >
-          <span className="color-blue fw-400">Right Solutions</span> helps
+          <span className="color-blue fw-500">Right Solutions</span> helps
           businesses prepare for future innovations by providing and efficiently
           managing your business-critical IT infrastructure allowing you to
           focus on your core business.

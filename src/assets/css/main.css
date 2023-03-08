@@ -676,7 +676,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   margin-bottom: 30px;
   text-align: left;
 }
-.list-style-one li:before {
+/* .list-style-one li:before {
   color: white;
   font-size: 13px;
   content: "\f00c";
@@ -687,7 +687,7 @@ a.theme-btn.gradient-btn-one:not(hover):before {
   border-radius: 50%;
   text-align: center;
   font-family: "Font Awesome 5 Free";
-}
+} */
 
 .list-style-two li {
   display: -webkit-box;

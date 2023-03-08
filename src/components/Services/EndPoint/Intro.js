@@ -55,7 +55,7 @@ export default function Intro({ id }) {
         }}
       >
         Traditional security architecture is not enough anymore. To{" "}
-        <span className="color-blue fw-400">protect</span> your business you not
+        <span className="color-blue fw-500">protect</span> your business you not
         only need to know and secure all your digital assets but it is critical
         to continuously monitor them for a breach and plan for business
         continuity in case of one.

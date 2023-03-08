@@ -33,7 +33,7 @@ export default function Intro({ id }) {
         }}
       >
         In today's business environment information technology is a{" "}
-        <span className="color-blue fw-400">critical function</span>. IT is no
+        <span className="color-blue fw-500">critical function</span>. IT is no
         longer a supporting function but has become an enabler for business.
       </Typography>
       <div className="display-flex justify-content-center mt-50 mb-50">

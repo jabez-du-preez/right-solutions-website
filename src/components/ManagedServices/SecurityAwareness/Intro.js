@@ -34,7 +34,7 @@ export default function Intro({ id }) {
       >
         Our Security Awareness Training service is designed to help
         organizations educate their employees about{" "}
-        <span className="color-red fw-500">cyber threats</span> and how to
+        <span className="color-red fw-500">cyber threats</span> and how to{" "}
         <span className="color-blue fw-500">protect</span> themselves and the
         organization from them.
       </Typography>
@@ -60,9 +60,9 @@ export default function Intro({ id }) {
         }}
       >
         With this service, you'll have access to a range of{" "}
-        <span className="color-blue fw-500">training materials</span>
-        and <span className="color-blue fw-500">resources</span> that will help
-        you to raise awareness of cybersecurity risks and best practices.
+        <span className="color-blue fw-500">training materials</span> and{" "}
+        <span className="color-blue fw-500">resources</span> that will help you
+        to raise awareness of cyber security risks and best practices.
       </Typography>
     </Box>
   );

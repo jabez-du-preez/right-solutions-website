@@ -379,6 +379,10 @@
   justify-content: center; /* center items horizontally, in this case */
 }
 
+.align-center {
+  align-items: center;
+}
+
 .flex-column {
   flex-direction: column;
 }

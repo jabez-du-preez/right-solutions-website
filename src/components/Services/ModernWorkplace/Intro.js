@@ -59,7 +59,7 @@ export default function Intro({ id }) {
               fontFamily: "Montserrat",
             }}
           >
-            Our <span className="color-blue fw-400">Modern Workplace</span>{" "}
+            Our <span className="color-blue fw-500">Modern Workplace</span>{" "}
             solutions allow your employees to access data when and where they
             need it.
           </Typography>
@@ -84,34 +84,13 @@ export default function Intro({ id }) {
               fontFamily: "Montserrat",
             }}
           >
-            Employees can <span className="color-blue fw-400">collaborate</span>{" "}
-            and <span className="color-blue fw-400">work</span> seamlessly and
+            Employees can <span className="color-blue fw-500">collaborate</span>{" "}
+            and <span className="color-blue fw-500">work</span> seamlessly and
             securely on any device, anywhere, thus allowing for the hybrid work
             environments that employees demand in current circumstances.
           </Typography>
         </Box>
       </Typography>
-      {/* <Typography
-        variant="h4"
-        textAlign="center"
-        sx={{
-          fontWeight: 400,
-          fontSize: {
-            xs: "1.50rem",
-            sm: "1.50rem",
-            md: "1.50rem",
-            lg: "1.75rem",
-          },
-          color: "#6D6D6D",
-          mt: 5,
-          fontFamily: "Montserrat",
-        }}
-      >
-        Our range of advanced network infrastructure solutions provides your
-        business with a <span className="color-blue fw-400">high-speed</span>{" "}
-        and <span className="color-blue fw-400">reliable</span> network that
-        allows for smoother operations and better optimal uptime.
-      </Typography> */}
     </Box>
   );
 }

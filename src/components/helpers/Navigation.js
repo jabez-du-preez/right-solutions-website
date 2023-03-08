@@ -131,12 +131,7 @@ function Navigation({ className }) {
               <li>
                 <Link to="/about/our-story">About Us</Link>
               </li>
-              {/* <li>
-                <Link to="#our-approach">Our Approach</Link>
-              </li>
-              <li>
-                <Link to="#our-expertise">Our Expertise</Link>
-              </li> */}
+
               <li>
                 <Link to="/about/contact-us">Contact Us</Link>
               </li>

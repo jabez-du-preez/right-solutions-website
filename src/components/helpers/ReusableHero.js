@@ -29,7 +29,15 @@ function ReusableHero({
             {listItems && (
               <ul className="list-style-one py-10 wow fadeInUp delay-0-6s">
                 {listItems.map((item) => (
-                  <li className="text-capitalize">{item}</li>
+                  <li className="text-capitalize display-flex align-center">
+                    <i
+                      style={{
+                        fontSize: "1.25rem",
+                      }}
+                      className="fa-solid fa-circle-check color-blue mr-10"
+                    ></i>
+                    {item}
+                  </li>
                 ))}
               </ul>
             )}

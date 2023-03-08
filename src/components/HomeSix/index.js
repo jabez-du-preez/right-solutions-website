@@ -84,6 +84,7 @@ export default function HomeSix() {
         showSecondButton
       >
         <ReusableService
+          key={Math.random()}
           id="services-cards"
           className="scroll-margin-100"
           items={cardItems}

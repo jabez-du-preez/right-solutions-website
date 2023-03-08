@@ -62,7 +62,7 @@ export default function ReusableService({
           <div className="service-slider-wrap">
             <SliderCom settings={settings}>
               {items.map((cardItem) => (
-                <div className="center-div">
+                <div key={cardItem.id} className="center-div">
                   <div
                     key={cardItem.id}
                     className={` service-item-eight ${heightClass} `}

@@ -57,8 +57,8 @@ export default function Intro({ id }) {
         }}
       >
         Our range of advanced network infrastructure solutions provides your
-        business with a <span className="color-blue fw-400">high-speed</span>{" "}
-        and <span className="color-blue fw-400">reliable</span> network that
+        business with a <span className="color-blue fw-500">high-speed</span>{" "}
+        and <span className="color-blue fw-500">reliable</span> network that
         allows for smoother operations and better optimal uptime.
       </Typography>
     </Box>
