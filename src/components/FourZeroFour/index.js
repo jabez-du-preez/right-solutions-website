@@ -1,9 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import errorImg from "../../assets/images/404.png";
 
 export default function FourZeroFour() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <section className="error-page text-center py-120 rpy-100">
       <div className="container">
@@ -15,11 +14,11 @@ export default function FourZeroFour() {
             changed, or is temporarily unavailable.
           </p>
           <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(-1);
-            }}
+            href="/"
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   navigate(-1);
+            // }}
             className="theme-btn mt-30"
           >
             Go Back
