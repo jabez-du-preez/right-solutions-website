@@ -9,12 +9,10 @@ export default function FourZeroFour() {
       <div className="container">
         <div className="error-content">
           <img src={errorImg} alt="404 Error" />
-          <h2>Oops! page not found.</h2>
+          <h2>Oops! We couldn't find that page.</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+            The page you are looking for might have been removed, had its name
+            changed, or is temporarily unavailable.
           </p>
           <a
             href="#"
@@ -24,7 +22,7 @@ export default function FourZeroFour() {
             }}
             className="theme-btn mt-30"
           >
-            go back
+            Go Back
           </a>
         </div>
       </div>
