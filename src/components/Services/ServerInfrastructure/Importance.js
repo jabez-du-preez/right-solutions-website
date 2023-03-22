@@ -1,9 +1,12 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { CSSTransition } from "react-transition-group";
 import Card from "../../helpers/Card";
 import CustomDivider from "../../helpers/CustomDivider";
 
 export default function Importance({ id }) {
+  const { ref, inView } = useInView({ threshold: 0.3 });
   return (
     <>
       <CustomDivider />
@@ -33,16 +36,28 @@ export default function Importance({ id }) {
         </Typography>
 
         <Grid container spacing={1} sx={{ mt: 3 }}>
-          <Grid item xs={12} sm={6} md={4} lg={4}>
-            <Card
-              colorClass="bg-white-custom"
-              textColorClass="color-black"
-              iconBackgroundColor="bg-blue"
-              flaticon="fa-solid fa-arrows-rotate"
-              headerText="High Availability"
-              explainationText="High availability is the ability of a system to continue operating without interruption when one or more of its components fail."
-            />
-          </Grid>
+          <CSSTransition
+            in={inView}
+            timeout={1000}
+            classNames={{
+              enter: "animate-enter",
+              enterActive: "animate-enter-active",
+              exit: "",
+              exitActive: "",
+            }}
+          >
+            <Grid ref={ref} item xs={12} sm={6} md={4} lg={4}>
+              <Card
+                sx={{ opacity: 0 }}
+                colorClass="bg-white-custom"
+                textColorClass="color-black"
+                iconBackgroundColor="bg-blue"
+                flaticon="fa-solid fa-arrows-rotate"
+                headerText="High Availability"
+                explainationText="High availability is the ability of a system to continue operating without interruption when one or more of its components fail."
+              />
+            </Grid>
+          </CSSTransition>
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <Card
               colorClass="bg-white-custom"
