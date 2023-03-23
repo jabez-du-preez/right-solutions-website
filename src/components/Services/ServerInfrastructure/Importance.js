@@ -40,10 +40,10 @@ export default function Importance({ id }) {
             in={inView}
             timeout={1000}
             classNames={{
-              enter: "animate-enter",
-              enterActive: "animate-enter-active",
-              exit: "",
-              exitActive: "",
+              enter: "animate-left-enter",
+              enterActive: "animate-left-enter-active",
+              exit: "animate-right-exit",
+              exitActive: "animate-right-exit-active",
             }}
           >
             <Grid ref={ref} item xs={12} sm={6} md={4} lg={4}>
@@ -58,25 +58,47 @@ export default function Importance({ id }) {
               />
             </Grid>
           </CSSTransition>
-          <Grid item xs={12} sm={6} md={4} lg={4}>
-            <Card
-              colorClass="bg-white-custom"
-              textColorClass="color-black"
-              iconBackgroundColor="bg-green"
-              flaticon="fa-solid fa-scale-unbalanced"
-              headerText="Scalability"
-              explainationText="An intelligently designed server infrastructure can be scaled up or down to meet the changing needs of your business."
-            />
+          <Grid ref={ref} item xs={12} sm={6} md={4} lg={4}>
+            <CSSTransition
+              in={inView}
+              timeout={1000}
+              classNames={{
+                enter: "animate-up-enter",
+                enterActive: "animate-up-enter-active",
+                exit: "",
+                exitActive: "",
+              }}
+            >
+              <Card
+                colorClass="bg-white-custom"
+                textColorClass="color-black"
+                iconBackgroundColor="bg-green"
+                flaticon="fa-solid fa-scale-unbalanced"
+                headerText="Scalability"
+                explainationText="An intelligently designed server infrastructure can be scaled up or down to meet the changing needs of your business."
+              />
+            </CSSTransition>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={4}>
-            <Card
-              colorClass="bg-white-custom"
-              textColorClass="color-black"
-              iconBackgroundColor="bg-purple"
-              flaticon="fa-solid fa-building-lock"
-              headerText="Security"
-              explainationText="Your server infrastructure is the backbone of your business. It needs to be secure and protected from outside threats."
-            />
+          <Grid ref={ref} item xs={12} sm={6} md={4} lg={4}>
+            <CSSTransition
+              in={inView}
+              timeout={1000}
+              classNames={{
+                enter: "animate-right-enter",
+                enterActive: "animate-right-enter-active",
+                exit: "animate-right-exit",
+                exitActive: "animate-right-exit-active",
+              }}
+            >
+              <Card
+                colorClass="bg-white-custom"
+                textColorClass="color-black"
+                iconBackgroundColor="bg-purple"
+                flaticon="fa-solid fa-building-lock"
+                headerText="Security"
+                explainationText="Your server infrastructure is the backbone of your business. It needs to be secure and protected from outside threats."
+              />
+            </CSSTransition>
           </Grid>
         </Grid>
       </Container>
