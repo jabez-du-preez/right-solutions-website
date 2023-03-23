@@ -242,7 +242,7 @@
 
 .feature-line {
   width: 40rem;
-  height: 2px;
+  height: 3px;
   position: relative;
   background: #3bb3eb;
   margin: auto auto;
@@ -773,13 +773,57 @@
   opacity: 1;
 }
 
-.animate-enter {
-  opacity: 0.5;
+.animate-left-enter {
+  opacity: 0;
+  transform: translateX(-100px);
 }
 
-.animate-enter-active {
+.animate-left-enter-active {
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transform: translateX(0px);
+  transition: all 1s ease-in-out;
+}
+
+.animate-right-enter {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.animate-right-enter-active {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1s ease-in-out;
+}
+
+.animate-right-exit {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.animate-right-exit-active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.animate-up-enter {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.animate-up-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s ease-in-out;
+}
+
+.animate-up-exit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.animate-up-exit-active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .hero-header-enter {
@@ -790,7 +834,7 @@
 .hero-header-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .sub-header-enter {
@@ -801,7 +845,7 @@
 .sub-header-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .y-one {
