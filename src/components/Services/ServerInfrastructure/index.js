@@ -5,7 +5,6 @@ import Layouts from "../../helpers/Layouts";
 import ReusableConclusion from "../../helpers/ReusableConclusion";
 import Importance from "./Importance";
 import Methods from "./Methods";
-import Test from "./Test";
 
 export default function ServerInfrastructure() {
   const conclusion = (
@@ -91,7 +90,6 @@ export default function ServerInfrastructure() {
           focus on your core business.
         </Typography>
       </Box>
-      <Test />
       <Importance />
       <Methods />
       <ReusableConclusion conclusion={conclusion} />
