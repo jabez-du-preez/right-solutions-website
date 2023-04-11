@@ -26,8 +26,8 @@ export default function Email() {
       showButton
       scrollToComponent={scroll}
       buttonText="Learn More"
-      pageTitle="Email Security"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="Securing your inbox, securing your "
+      highlight="Business"
       showSecondButton
     >
       <Intro id="email-intro" />

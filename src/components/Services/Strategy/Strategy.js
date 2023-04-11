@@ -12,9 +12,8 @@ export default function Strategy() {
   return (
     <Layouts
       bannerImage={bannerImage}
-      pageTitle="Transform your operations with our"
-      highlight="Strategy and Consulting"
-      pageTitleContinued="solutions"
+      pageTitle="Transforming businesses to "
+      highlight="Thrive"
       buttonText="Learn More"
       showButton
       scrollToComponent={scroll}

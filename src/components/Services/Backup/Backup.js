@@ -27,8 +27,8 @@ export default function Backup() {
       buttonText="Learn More"
       showButton
       scrollToComponent={scroll}
-      pageTitle="Managed Backup"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="Your backups will be running smoother "
+      highlight="Than Ever"
       showSecondButton
     >
       <Intro id="backup-intro" />

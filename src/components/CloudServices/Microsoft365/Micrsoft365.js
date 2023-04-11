@@ -26,8 +26,9 @@ export default function Microsoft365() {
   return (
     <Layouts
       bannerImage={bannerImage}
-      pageTitle="Microsoft 365"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="Your employees will collaborate unlike "
+      highlight="ever "
+      pageTitleContinued="before with Microsoft 365"
       scroll={scroll}
       showButton
       buttonText="Learn More"

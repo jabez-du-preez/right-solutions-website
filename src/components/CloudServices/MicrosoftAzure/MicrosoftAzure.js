@@ -25,8 +25,9 @@ export default function MicrosoftAzure() {
   return (
     <Layouts
       bannerImage={bannerImage}
-      pageTitle="Microsoft Azure?"
-      highlight="We do that too!"
+      pageTitle="The full potential of the cloud "
+      highlight="unleashed "
+      pageTitleContinued="with Microsoft Azure"
       showButton
       showSecondButton
       buttonText="Learn more"

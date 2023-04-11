@@ -24,8 +24,8 @@ export default function Amazon() {
   return (
     <Layouts
       bannerImage="https://images.unsplash.com/photo-1583505093722-15596e9ada6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-      pageTitle="Amazon Web Services"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="Let us transform your business through the power of "
+      highlight="AWS"
       scroll={scroll}
       showButton
       buttonText="Learn More"

@@ -26,6 +26,9 @@ export default function DarkWeb() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="We monitor the "
+      highlight="dark web "
+      pageTitleContinued="so you don't have to"
     >
       <Intro id="darkweb-intro" />
       <OurOffers />

@@ -28,9 +28,8 @@ export default function ServerInfrastructure() {
 
   return (
     <Layouts
-      pageTitle="We Do"
-      highlight="IT"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      highlight="Server Infrastructure "
+      pageTitleContinued="made simple and seamless"
       showButton
       buttonText="Learn More"
       scrollToComponent={scroll}

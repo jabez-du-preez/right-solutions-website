@@ -13,9 +13,9 @@ export default function Hero({
   pageTitleSuffix,
   pageTitleContinued,
   buttonText,
-  // showButton,
+  showButton,
   scrollToComponent,
-  // showSecondButton,
+  showSecondButton,
 }) {
   return (
     // <CSSTransition
@@ -54,7 +54,13 @@ export default function Hero({
             }}
           >
             <h1 className="page-title text-center">
-              {pageTitle} <span className="color-blue">{highlight}</span>{" "}
+              {pageTitle}
+              <span
+                className="color-blue"
+                style={{ textTransform: "capitalize" }}
+              >
+                {highlight}
+              </span>
               {pageTitleSuffix}
               {pageTitleContinued}
             </h1>
@@ -83,87 +89,91 @@ export default function Hero({
               justifyContent: "center",
             }}
           >
-            <CSSTransition
-              in
-              appear
-              timeout={3500}
-              classNames={{
-                enter: "button-left-enter",
-                enterActive: "button-left-enter-active",
-                exit: "",
-                exitActive: "",
-                appear: "button-left-enter",
-                appearActive: "button-left-enter-active",
-              }}
-            >
-              <Button
-                variant="contained"
-                sx={{
-                  fontFamily: "Montserrat",
-                  fontSize: {
-                    xs: "1rem",
-                    sm: "1rem",
-                    md: "1.3rem",
-                    lg: "1.3rem",
-                    xl: "1.3rem",
-                  },
-                  borderRadius: "10px",
-                  textTransform: "none",
-                  backgroundColor: "white",
-                  color: "#3bb3eb",
-                  transition: "all 0.3s ease-in-out",
-                  "&:hover": {
-                    color: "#3bb3eb",
-                    backgroundColor: "black",
-                  },
+            {showButton && (
+              <CSSTransition
+                in
+                appear
+                timeout={3500}
+                classNames={{
+                  enter: "button-left-enter",
+                  enterActive: "button-left-enter-active",
+                  exit: "",
+                  exitActive: "",
+                  appear: "button-left-enter",
+                  appearActive: "button-left-enter-active",
                 }}
-                onClick={scrollToComponent}
               >
-                {buttonText}
-              </Button>
-            </CSSTransition>
+                <Button
+                  variant="contained"
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xs: "1rem",
+                      sm: "1rem",
+                      md: "1.3rem",
+                      lg: "1.3rem",
+                      xl: "1.3rem",
+                    },
+                    borderRadius: "10px",
+                    textTransform: "none",
+                    backgroundColor: "white",
+                    color: "#3bb3eb",
+                    transition: "all 0.3s ease-in-out",
+                    "&:hover": {
+                      color: "#3bb3eb",
+                      backgroundColor: "black",
+                    },
+                  }}
+                  onClick={scrollToComponent}
+                >
+                  {buttonText}
+                </Button>
+              </CSSTransition>
+            )}
 
-            <CSSTransition
-              in
-              appear
-              timeout={3500}
-              classNames={{
-                enter: "button-right-enter",
-                enterActive: "button-right-enter-active",
-                exit: "",
-                exitActive: "",
-                appear: "button-right-enter",
-                appearActive: "button-right-enter-active",
-              }}
-            >
-              <Button
-                variant="contained"
-                size="small"
-                sx={{
-                  ml: 4,
-                  fontFamily: "Montserrat",
-                  fontSize: {
-                    xs: "1rem",
-                    sm: "1rem",
-                    md: "1.3rem",
-                    lg: "1.3rem",
-                    xl: "1.3rem",
-                  },
-                  borderRadius: "10px",
-                  textTransform: "none",
-                  backgroundColor: "#3bb3eb",
-                  transition: "all 0.3s ease-in-out",
-                  "&:hover": {
-                    color: "#3bb3eb",
-                    backgroundColor: "black",
-                  },
+            {showSecondButton && (
+              <CSSTransition
+                in
+                appear
+                timeout={3500}
+                classNames={{
+                  enter: "button-right-enter",
+                  enterActive: "button-right-enter-active",
+                  exit: "",
+                  exitActive: "",
+                  appear: "button-right-enter",
+                  appearActive: "button-right-enter-active",
                 }}
               >
-                <Link to="/about/contact-us" style={{ color: "white" }}>
-                  Contact Us
-                </Link>
-              </Button>
-            </CSSTransition>
+                <Button
+                  variant="contained"
+                  size="small"
+                  sx={{
+                    ml: 4,
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xs: "1rem",
+                      sm: "1rem",
+                      md: "1.3rem",
+                      lg: "1.3rem",
+                      xl: "1.3rem",
+                    },
+                    borderRadius: "10px",
+                    textTransform: "none",
+                    backgroundColor: "#3bb3eb",
+                    transition: "all 0.3s ease-in-out",
+                    "&:hover": {
+                      color: "#3bb3eb",
+                      backgroundColor: "black",
+                    },
+                  }}
+                >
+                  <Link to="/about/contact-us" style={{ color: "white" }}>
+                    Contact Us
+                  </Link>
+                </Button>
+              </CSSTransition>
+            )}
           </Box>
         </div>
       </div>

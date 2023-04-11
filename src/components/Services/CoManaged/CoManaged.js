@@ -27,8 +27,9 @@ export default function CoManaged() {
       showButton
       scrollToComponent={scroll}
       buttonText="Learn More"
-      pageTitle="Co-Managed IT"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="We "
+      highlight="Bridge "
+      pageTitleContinued="the gap between in-house and outsourced IT."
       showSecondButton
     >
       <Intro id="co-managed-intro" />

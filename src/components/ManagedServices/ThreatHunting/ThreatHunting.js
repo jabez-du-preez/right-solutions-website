@@ -29,6 +29,9 @@ export default function ThreatHunting() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="We will find "
+      highlight="threats "
+      pageTitleContinued="before you can say 'oops!'"
     >
       <Intro id="threat-intro" />
       <OurOffers />

@@ -27,6 +27,9 @@ export default function FirewallManagement() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="We will protect your "
+      highlight="network "
+      pageTitleContinued="using our cutting edge firewall service"
     >
       <Intro id="firewall-intro" />
       <OurOffers />

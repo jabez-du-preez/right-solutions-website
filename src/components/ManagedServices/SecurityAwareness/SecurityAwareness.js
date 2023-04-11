@@ -28,6 +28,9 @@ export default function SecurityAwareness() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="Your employees, "
+      highlight="trained "
+      pageTitleContinued="to stay safe online"
     >
       <Intro id="awareness-intro" />
       <OurOffers />

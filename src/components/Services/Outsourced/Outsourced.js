@@ -25,8 +25,9 @@ export default function Outsourced() {
       showButton
       scrollToComponent={scroll}
       buttonText="Learn More"
-      pageTitle="Outsourced IT"
-      pageSubtitle="We help you leverage the full potential of the cloud to support your business needs."
+      pageTitle="Realiable "
+      highlight="Solutions"
+      pageTitleContinued=", outsourced to perfection"
       showSecondButton
     >
       <Intro id="outsourced-intro" />

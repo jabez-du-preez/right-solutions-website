@@ -11,8 +11,8 @@ export default function EndPoint() {
   };
   return (
     <Layouts
-      pageTitle="Let us manage your"
-      highlight="Endpoint Security"
+      pageTitle="Round the clock security for your "
+      highlight="End Points"
       bannerImage={bannerImage}
       showButton
       buttonText="Learn More"

@@ -13,8 +13,8 @@ export default function Network() {
   return (
     <Layouts
       bannerImage={bannerImage}
-      pageTitle="Transform your operations with our"
-      highlight="Network"
+      pageTitle="Transform your operations with our "
+      highlight="Network "
       pageTitleContinued="solutions"
       buttonText="Learn More"
       showButton

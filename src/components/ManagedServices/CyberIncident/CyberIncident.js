@@ -27,6 +27,9 @@ export default function CyberIncident() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="Your trusted partner, "
+      highlight="we "
+      pageTitleContinued="Are there for you when cyber incidents strikes."
     >
       <Intro id="cyber-intro" />
       <OurOffer />

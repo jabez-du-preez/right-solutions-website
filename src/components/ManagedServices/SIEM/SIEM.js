@@ -27,6 +27,9 @@ export default function SIEM() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="Security "
+      highlight="simplified "
+      pageTitleContinued="with our Managed SIEM and SOC service"
     >
       <Intro id="siem-intro" />
       <OurRange />

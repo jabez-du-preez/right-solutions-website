@@ -13,9 +13,9 @@ export default function ModernWorkplace() {
   return (
     <Layouts
       bannerImage={bannerImage}
-      pageTitle="Transform your operations with our"
-      highlight="Modern Workplace"
-      pageTitleContinued="solutions"
+      pageTitle="Transform your operations with our "
+      highlight="Modern Workplace "
+      pageTitleContinued="Solutions"
       buttonText="Learn More"
       showButton
       scrollToComponent={scroll}

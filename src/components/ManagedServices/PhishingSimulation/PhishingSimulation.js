@@ -20,6 +20,7 @@ export default function PhishingSimulation() {
     const hero = document.querySelector("#phishing-intro");
     hero.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <Layouts
       bannerImage="https://images.unsplash.com/photo-1583249598754-b7a2f59651fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -27,6 +28,9 @@ export default function PhishingSimulation() {
       scrollToComponent={scroll}
       buttonText="Learn More"
       showSecondButton
+      pageTitle="We don't take your users on a "
+      highlight="phishing "
+      pageTitleContinued="trip"
     >
       <Intro id="phishing-intro" />
       <OurOffers />
