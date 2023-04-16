@@ -13,8 +13,8 @@ import DarkWeb from "./components/ManagedServices/DarkWeb/DarkWeb";
 import FirewallManagement from "./components/ManagedServices/FirewallManagement/FirewallManagement";
 import Pentesting from "./components/ManagedServices/Pentesting/Pentesting";
 import PhishingSimulation from "./components/ManagedServices/PhishingSimulation/PhishingSimulation";
-import SecurityAwareness from "./components/ManagedServices/SecurityAwareness/SecurityAwareness";
 import SIEM from "./components/ManagedServices/SIEM/SIEM";
+import SecurityAwareness from "./components/ManagedServices/SecurityAwareness/SecurityAwareness";
 import ThreatHunting from "./components/ManagedServices/ThreatHunting/ThreatHunting";
 import Vulnerability from "./components/ManagedServices/Vulnerability/Vulnerability";
 import Backup from "./components/Services/Backup/Backup";
@@ -86,6 +86,8 @@ export default function Routers() {
       <Route path="/about/contact-us" element={<Contact />} />
       <Route path="/our-expertise" element={<Expertise />} />
       <Route path="/about/our-story" element={<Story />} />
+      <Route path="/support" />
+      <Route path="/support/admin" />
     </Routes>
   );
 }

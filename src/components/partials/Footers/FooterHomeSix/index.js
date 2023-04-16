@@ -1,7 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import svglogo from "../../../../assets/images/svg-logo.svg";
+import emailImage from "../../../../assets/images/email/hello.svg";
+import svglogo from "../../../../assets/images/logos/rs-logo.svg";
 
 export default function FooterHomeSix() {
   const year = new Date().getFullYear();
@@ -61,7 +62,7 @@ export default function FooterHomeSix() {
                   fontSize: 18,
                 }}
               >
-                We Do IT!
+                We Secure IT!
               </Typography>
             </div>
           </Grid>
@@ -199,15 +200,18 @@ export default function FooterHomeSix() {
               <ul>
                 <li className="mb-5">
                   <i className="fas fa-phone-alt"></i>{" "}
-                  <a className="ml-10" href="callto:+(+27) 12 345 678">
-                    (+27) 12 345 678
+                  <a className="ml-10" href="callto:+(+27) 21 976 6214">
+                    (+27) 21 976 6214
                   </a>
                 </li>
                 <li className="mb-5">
                   <i className="fas fa-envelope"></i>{" "}
-                  <a className="ml-10" href="mailto:info@rightsol.co.za">
-                    info@rightsol.co.za
-                  </a>
+                  <img
+                    src={emailImage}
+                    className="ml-10"
+                    style={{ width: "10rem" }}
+                    alt="Right Solutions Contact Email"
+                  />
                 </li>
                 <li>
                   <i className="fas fa-map-marker-alt mr-10"></i> Cape Town

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../../assets/images/logos/logo-white.png";
+import rsLogo from "../../assets/images/logos/rs-logo-white.svg";
 import StickyMenu from "../../lib/StickyMenu";
 import MobileHeaderCom from "../partials/Mobile/MobileHeaderCom";
 import Navigation from "./Navigation";
@@ -10,7 +10,7 @@ export default function Navbar() {
   });
   return (
     <>
-      <MobileHeaderCom logo={logo} />
+      <MobileHeaderCom logo={rsLogo} />
       <header className="main-header header-six">
         <div className="header-upper">
           <div className="container clearfix">
@@ -21,7 +21,7 @@ export default function Navbar() {
                     <img
                       width="170px"
                       height="50px"
-                      src={logo}
+                      src={rsLogo}
                       alt="Logo"
                       title="Logo"
                     />

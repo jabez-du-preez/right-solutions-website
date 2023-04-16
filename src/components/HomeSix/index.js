@@ -93,7 +93,6 @@ export default function HomeSix() {
           numberOfSlidesToScroll={1}
           numberOfSlidesToShow={3}
         />
-        {/* <OurServices id="what-we-do" /> */}
         <CounterSection />
         <BacktoTopCom className=".main-header" />
       </Layouts>

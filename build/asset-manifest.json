@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.dc4bc85e.chunk.css",
-    "main.js": "/static/js/main.471ffe85.chunk.js",
-    "main.js.map": "/static/js/main.471ffe85.chunk.js.map",
+    "main.js": "/static/js/main.741ce5b0.chunk.js",
+    "main.js.map": "/static/js/main.741ce5b0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.05f3843c.js",
     "runtime-main.js.map": "/static/js/runtime-main.05f3843c.js.map",
     "static/css/2.e96d9d4f.chunk.css": "/static/css/2.e96d9d4f.chunk.css",
@@ -25,16 +25,17 @@
     "static/media/a_font-awesome-5.9.0.css": "/static/media/fa-solid-900.dfaa060a.eot",
     "static/media/style.css": "/static/media/work-progress.6be786b4.jpg",
     "static/media/hacking1.c6329611.jpg": "/static/media/hacking1.c6329611.jpg",
+    "static/media/hello.7209e4ad.svg": "/static/media/hello.7209e4ad.svg",
     "static/media/laptop1.4c36888d.jpg": "/static/media/laptop1.4c36888d.jpg",
-    "static/media/logo-white.8f3005a3.png": "/static/media/logo-white.8f3005a3.png",
     "static/media/manage.4c0007d0.jpg": "/static/media/manage.4c0007d0.jpg",
     "static/media/measure.20ef1f26.jpg": "/static/media/measure.20ef1f26.jpg",
     "static/media/microsoft.16af2ad3.jpg": "/static/media/microsoft.16af2ad3.jpg",
     "static/media/network.aeafef5f.jpg": "/static/media/network.aeafef5f.jpg",
     "static/media/office.35054db0.jpg": "/static/media/office.35054db0.jpg",
+    "static/media/rs-logo-white.1d46cfb9.svg": "/static/media/rs-logo-white.1d46cfb9.svg",
+    "static/media/rs-logo.158481dd.svg": "/static/media/rs-logo.158481dd.svg",
     "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
     "static/media/story.cd36658c.jpg": "/static/media/story.cd36658c.jpg",
-    "static/media/svg-logo.b6c1d6c4.svg": "/static/media/svg-logo.b6c1d6c4.svg",
     "static/media/threat.32f8df3e.jpg": "/static/media/threat.32f8df3e.jpg",
     "static/media/vulnerable.6beab9b4.jpg": "/static/media/vulnerable.6beab9b4.jpg",
     "static/media/wall.ccfe71d7.jpg": "/static/media/wall.ccfe71d7.jpg"
@@ -44,6 +45,6 @@
     "static/css/2.e96d9d4f.chunk.css",
     "static/js/2.8e4472ef.chunk.js",
     "static/css/main.dc4bc85e.chunk.css",
-    "static/js/main.471ffe85.chunk.js"
+    "static/js/main.741ce5b0.chunk.js"
   ]
 }

@@ -15,30 +15,20 @@ export default function Contact() {
     setEmail({ ...email, [name]: value });
   };
 
-  // process.env.REACT_APP_EMAIL_ADDRESS = "info@woulfdigitalstudio.co.za";
-
   const onSubmitHandler = (e) => {
     e.preventDefault();
     // const emailConfig = {
-    //   SecureToken: "ba30f2b1-34f4-4aad-9a4b-55a6fa4886c8",
-    //   To: "info@woulfdigitalstudio.co.za",
-    //   From: `${email.email}`,
-    //   Subject: `${email.name} - Potential Client`,
-    //   Body: `${email.message}`,
-    // };
-
-    // const emailConfig = {
     //   Host: "smtp.elasticemail.com",
-    //   Username: "web.mail@woulfdigitalstudio.co.za",
-    //   Password: "C8FD4B1F34C4829BCD0CBBE4462FC8DCF5F6",
-    //   To: "info@woulfdigitalstudio.co.za",
-    //   From: "info@woulfdigitalstudio.co.za",
+    //   Username: emailAddress,
+    //   Password: "19B8F80346381BCD358BC0C312A38493E35B",
+    //   To: emailAddress,
+    //   From: emailAddress,
     //   Subject: `${email.user_email} - Potential Client`,
     //   Body: `${email.message}`,
     // };
 
     const emailConfig = {
-      SecureToken: "b986fcbf-f0dc-407c-ae7a-cdb930020ec4",
+      SecureToken: "136931ce-bff1-476a-b1d0-d60075438b9a",
       To: emailAddress,
       From: emailAddress,
       Subject: `${email.user_email} - Potential Client`,
@@ -52,33 +42,11 @@ export default function Contact() {
           setTimeout(() => {
             setEmailSent(false);
             setEmail({});
-          }, 2000);
+          }, 3000);
         }
       });
     }
   };
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_skyjkmw",
-  //       "template_rdxpppd",
-  //       form.current,
-  //       "suMeD8d1WxMp63-OH"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setEmailSent(true);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //         setEmailSent(false);
-  //       }
-  //     );
-  // };
 
   return (
     <>
@@ -178,17 +146,6 @@ export default function Contact() {
                               label="Email sent!"
                               color="success"
                             />
-                            // <Typography
-                            //   variant="h6"
-                            //   sx={{
-                            //     ml: 3,
-                            //     fontFamily: "Montserrat",
-                            //     fontWeight: 500,
-                            //     color: "#3bb3eb",
-                            //   }}
-                            // >
-                            //   Email sent!
-                            // </Typography>
                           )}
                         </Box>
                       </div>
