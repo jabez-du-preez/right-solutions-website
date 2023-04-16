@@ -86,8 +86,6 @@ export default function Routers() {
       <Route path="/about/contact-us" element={<Contact />} />
       <Route path="/our-expertise" element={<Expertise />} />
       <Route path="/about/our-story" element={<Story />} />
-      <Route path="/support" />
-      <Route path="/support/admin" />
     </Routes>
   );
 }
