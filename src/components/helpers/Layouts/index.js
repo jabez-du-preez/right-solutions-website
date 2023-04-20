@@ -20,12 +20,20 @@ export default function Layouts({
   showSecondButton,
   secondButtonText,
 }) {
+  // useEffect(() => {
+  //   window.scroll
+  // }, []);
+  // useEffect(() => {
+  //   window.history.scrollRestoration = "manual";
+  // }, []);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.history.replaceState(null, null, "#top");
   }, []);
+
   return (
     <>
       <Navbar />
+      <div id="top"></div>
       <Hero
         pageTitle={pageTitle}
         breadcrumbs={breadcrumbs}

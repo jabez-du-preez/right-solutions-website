@@ -65,6 +65,10 @@
 
 /* #######################Color templates######################## */
 
+.highlight-hero {
+  animation: hero-highlight 1s ease-in-out alternate-reverse infinite;
+}
+
 .light-shadow {
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15);
 }
@@ -762,6 +766,18 @@
   }
 }
 
+@keyframes hero-highlight {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .test-div {
   margin: auto;
   width: 200px;
@@ -781,7 +797,7 @@
 .animate-left-enter-active {
   opacity: 1;
   transform: translateX(0px);
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .animate-right-enter {
@@ -793,6 +809,7 @@
   opacity: 1;
   transform: translateX(0px);
   transition: all 1s ease-in-out;
+  transition-delay: 500ms;
 }
 
 .animate-right-exit {
@@ -813,7 +830,7 @@
 .animate-up-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .animate-up-exit {
@@ -834,7 +851,7 @@
 .hero-header-enter-active {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .sub-header-enter {
@@ -846,6 +863,7 @@
   opacity: 1;
   transform: translateY(0px);
   transition: all 1s ease-in-out;
+  transition-delay: 500ms;
 }
 
 .y-one {

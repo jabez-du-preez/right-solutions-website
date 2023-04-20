@@ -27,8 +27,8 @@ export default function Backup() {
       buttonText="Learn More"
       showButton
       scrollToComponent={scroll}
-      pageTitle="Your backups will be running smoother "
-      highlight="Than Ever"
+      pageTitle="Your backups will be running smoother than"
+      highlight=" Ever"
       showSecondButton
     >
       <Intro id="backup-intro" />

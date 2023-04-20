@@ -18,19 +18,6 @@ export default function Hero({
   showSecondButton,
 }) {
   return (
-    // <CSSTransition
-    //   in
-    //   appear
-    //   timeout={1000}
-    //   classNames={{
-    //     enter: "animate-enter",
-    //     enterActive: "animate-enter-active",
-    //     exit: "opacity-1",
-    //     exitActive: "opacity-1",
-    //     appear: "animate-enter",
-    //     appearActive: "animate-enter-active",
-    //   }}
-    // >
     <section
       className="page-banner bgs-cover overlay pt-50"
       style={{
@@ -43,7 +30,7 @@ export default function Hero({
           <CSSTransition
             in
             appear
-            timeout={1000}
+            timeout={1500}
             classNames={{
               enter: "hero-header-enter",
               enterActive: "hero-header-enter-active",
@@ -56,7 +43,7 @@ export default function Hero({
             <h1 className="page-title text-center">
               {pageTitle}
               <span
-                className="color-blue"
+                className="color-blue fw-500 highlight-hero"
                 style={{ textTransform: "capitalize" }}
               >
                 {highlight}
@@ -68,7 +55,7 @@ export default function Hero({
           <CSSTransition
             in
             appear
-            timeout={1000}
+            timeout={1500}
             classNames={{
               enter: "sub-header-enter",
               enterActive: "sub-header-enter-active",
@@ -178,6 +165,5 @@ export default function Hero({
         </div>
       </div>
     </section>
-    // </CSSTransition>
   );
 }

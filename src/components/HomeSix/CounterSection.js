@@ -19,7 +19,7 @@ export default function CounterSection() {
               fontFamily: "Montserrat",
             }}
           >
-            We serve many users and clients.
+            We serve many users and clients
           </Typography>
           <Typography
             className="light-grey"
@@ -31,7 +31,7 @@ export default function CounterSection() {
               fontFamily: "Montserrat",
             }}
           >
-            Here is a brief summary.
+            Here is a brief summary
           </Typography>
         </div>
         <div className="row">
@@ -40,10 +40,10 @@ export default function CounterSection() {
               <span
                 className="count-text plus"
                 data-speed="5000"
-                data-stop="10"
+                data-stop="100"
               >
                 <CounterUp
-                  endValue="10"
+                  endValue="100"
                   sectionSelect="counter-section-three"
                 />
               </span>
@@ -55,14 +55,14 @@ export default function CounterSection() {
               <span
                 className="count-text plus"
                 data-speed="5000"
-                data-stop="500"
+                data-stop="5000"
               >
                 <CounterUp
-                  endValue="500"
+                  endValue="5000"
                   sectionSelect="counter-section-three"
                 />
               </span>
-              <span>Users</span>
+              <span>Endpoints</span>
             </div>
           </div>
           <div className="col-lg-4 col-sm-6">
@@ -70,10 +70,10 @@ export default function CounterSection() {
               <span
                 className="count-text plus"
                 data-speed="5000"
-                data-stop="10"
+                data-stop="100"
               >
                 <CounterUp
-                  endValue="10"
+                  endValue="100"
                   sectionSelect="counter-section-three"
                 />
               </span>
