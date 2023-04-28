@@ -35,6 +35,7 @@
     "indent": 0,
     "linebreak-style": 0,
     "react/prop-types": 0,
+    "no-param-reassign": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "react/jsx-filename-extension": [
       1,
@@ -42,17 +43,6 @@
         "extensions": [".js", ".jsx"]
       }
     ]
-    // "prettier/prettier": [
-    //     "error",
-    //     {
-    //         "trailingComma": "es5",
-    //         "singleQuote": true,
-    //         "printWidth": 100,
-    //         "tabWidth": 4,
-    //         "semi": true,
-    //         "endOfLine": "auto"
-    //     }
-    // ]
   },
   "plugins": ["prettier", "react", "react-hooks"]
 }

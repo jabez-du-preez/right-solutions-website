@@ -72,7 +72,6 @@ export default function HomeSix() {
   return (
     <>
       <Layouts
-        // bannerImage="https://images.unsplash.com/photo-1526230040953-6bce5ae9861b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1708&q=80"
         bannerImage="https://images.unsplash.com/photo-1574075769427-50408e11d0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
         pageTitle="We’re The "
         highlight="Right Solution "

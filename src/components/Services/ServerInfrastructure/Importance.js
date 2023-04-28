@@ -47,6 +47,7 @@ export default function Importance({ id }) {
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <CSSTransition
               in={show}
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "animate-left-enter",
@@ -68,6 +69,7 @@ export default function Importance({ id }) {
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <CSSTransition
               in={show}
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "animate-up-enter",
@@ -90,6 +92,7 @@ export default function Importance({ id }) {
           <Grid item xs={12} sm={6} md={4} lg={4}>
             <CSSTransition
               in={show}
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "animate-right-enter",

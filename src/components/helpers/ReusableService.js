@@ -75,8 +75,9 @@ export default function ReusableService({
             <SliderCom settings={settings}>
               {items.map((cardItem) => (
                 <CSSTransition
+                  key={cardItem.id}
                   in={show}
-                  appear
+                  appear={show}
                   timeout={1500}
                   classNames={{
                     enter: "hero-header-enter",

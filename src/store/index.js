@@ -1,10 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import drawerState from "./drawerState";
-import rtlSetting from "./rtlSetting";
+import titleReducer from "./titleState";
 
 export default configureStore({
   reducer: {
-    rtl: rtlSetting,
-    drawerState,
+    title: titleReducer,
   },
 });

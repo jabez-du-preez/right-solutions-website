@@ -380,6 +380,9 @@
 }
 .main-menu.navbar-expand-lg .restly-header-main-menu > ul > li > a {
   color: white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.25px;
 }
 
 .main-menu.navbar-expand-lg

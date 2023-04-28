@@ -4,12 +4,6 @@ import ReusableHero from "../../helpers/ReusableHero";
 import ReusableHeroRight from "../../helpers/ReusableHeroRight";
 
 export default function Methods() {
-  const textWithASpan = `We use a method called ${(
-    <span className="color-dark-blue text-capitalize font-bold">
-      "Virtualization."
-    </span>
-  )}`;
-  console.log(textWithASpan);
   return (
     <>
       <div className="display-flex justify-content-center mt-50 mb-50">

@@ -20,6 +20,7 @@ function ReusableHero({
       setShow(true);
     }
   }, [inView]);
+
   return (
     <section ref={ref} id="reusable-hero" className="hero-section-five rel">
       <div className="row align-items-center">
@@ -42,7 +43,7 @@ function ReusableHero({
             </CSSTransition>
             <CSSTransition
               in={show}
-              appear
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "sub-header-enter",
@@ -62,7 +63,7 @@ function ReusableHero({
             </CSSTransition>
             <CSSTransition
               in={show}
-              appear
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "animate-right-enter",
@@ -91,7 +92,7 @@ function ReusableHero({
             </CSSTransition>
             <CSSTransition
               in={show}
-              appear
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "sub-header-enter",

@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Contact from "../../Contact";
 import FooterHomeSix from "../../partials/Footers/FooterHomeSix";
 import BacktoTopCom from "../BackToTopCom";
 import Navbar from "../Navbar";
+import Head from "./Head";
 import Hero from "./Hero";
 
 export default function Layouts({
@@ -20,20 +21,28 @@ export default function Layouts({
   showSecondButton,
   secondButtonText,
 }) {
-  // useEffect(() => {
-  //   window.scroll
-  // }, []);
-  // useEffect(() => {
-  //   window.history.scrollRestoration = "manual";
-  // }, []);
-  useEffect(() => {
-    window.history.replaceState(null, null, "#top");
-  }, []);
+  const currentURL = window.location.href;
+
+  function formatUrl(url) {
+    const path = url.substring(url.lastIndexOf("/") + 1);
+
+    const words = path
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+
+    const formatted = words.join(" ");
+
+    if (formatted === "") {
+      return "Home";
+    }
+
+    return formatted;
+  }
 
   return (
     <>
+      <Head title={formatUrl(currentURL)} />
       <Navbar />
-      <div id="top"></div>
       <Hero
         pageTitle={pageTitle}
         breadcrumbs={breadcrumbs}
