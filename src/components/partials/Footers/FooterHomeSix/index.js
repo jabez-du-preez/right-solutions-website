@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
 import emailImage from "../../../../assets/images/email/hello.svg";
+import phoneImage from "../../../../assets/images/email/phone.svg";
 import svglogo from "../../../../assets/images/logos/rs-logo.svg";
 
 export default function FooterHomeSix() {
@@ -18,7 +18,6 @@ export default function FooterHomeSix() {
                 justifyContent="flex-start"
                 alignContent="center"
               >
-                {/* <div className="center-align"> */}
                 <img
                   className="resize-img"
                   style={{ margin: "auto auto" }}
@@ -41,129 +40,123 @@ export default function FooterHomeSix() {
             </div>
           </Grid>
           <Grid item xs={12} md={4} lg={2} xl={2}>
-            <div className="footer-widget link-widget ml-10 rml-0 center-align">
+            <div className="footer-widget a-widget ml-10 rml-0 center-align">
               <h4 className="footer-title">Solutions</h4>
               <ul>
                 <li>
-                  <Link to="/solutions/server-infrastructure">
+                  <a href="/solutions/server-infrastructure">
                     Server Infrastructure
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/solutions/endpoint-security">
-                    End Point Security
-                  </Link>
+                  <a href="/solutions/endpoint-security">End Point Security</a>
                 </li>
                 <li>
-                  <Link to="/solutions/network-infrastructure">
+                  <a href="/solutions/network-infrastructure">
                     Network Infrastructure
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/solutions/modern-workplace">Modern Workplace</Link>
+                  <a href="/solutions/modern-workplace">Modern Workplace</a>
                 </li>
                 <li>
-                  <Link to="/solutions/strategy-and-consulting">
+                  <a href="/solutions/strategy-and-consulting">
                     Strategy and Consulting
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/solutions/voice-solutions">Voice Solutions</Link>
+                  <a href="/solutions/voice-solutions">Voice Solutions</a>
                 </li>
                 <li>
-                  <Link to="/solutions/backup-solutions">Backup Solutions</Link>
+                  <a href="/solutions/backup-solutions">Backup Solutions</a>
                 </li>
                 <li>
-                  <Link to="/solutions/email-security">Email Security</Link>
+                  <a href="/solutions/email-security">Email Security</a>
                 </li>
                 <li>
-                  <Link to="/solutions/outsourced-it">Outsourced IT</Link>
+                  <a href="/solutions/outsourced-it">Outsourced IT</a>
                 </li>
                 <li>
-                  <Link to="/solutions/co-managed-it">Co-Managed IT</Link>
+                  <a href="/solutions/co-managed-it">Co-Managed IT</a>
                 </li>
               </ul>
             </div>
           </Grid>
           <Grid item xs={12} md={4} lg={2} xl={2}>
-            <div className="footer-widget link-widget ml-10 rml-0 center-align">
+            <div className="footer-widget a-widget ml-10 rml-0 center-align">
               <h4 className="footer-title">Managed Services</h4>
               <ul>
                 <li>
-                  <Link to="/managed-services/pentesting">Pentesting</Link>
+                  <a href="/managed-services/pentesting">Pentesting</a>
                 </li>
                 <li>
-                  <Link to="/managed-services/cyber-incident-response">
+                  <a href="/managed-services/cyber-incident-response">
                     Cyber Incidient Response
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/managed-siem-and-soc">
+                  <a href="/managed-services/managed-siem-and-soc">
                     Managed SIEM and SOC
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/vulnerability-management">
+                  <a href="/managed-services/vulnerability-management">
                     Vulnerability Management
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/cyber-security-awareness-training">
+                  <a href="/managed-services/cyber-security-awareness-training">
                     Cyber Security Awareness Training
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/phishing-simulation">
+                  <a href="/managed-services/phishing-simulation">
                     Phishing Simulation
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/dark-web-monitoring">
+                  <a href="/managed-services/dark-web-monitoring">
                     Dark Web Monitoring
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/firewall-management">
+                  <a href="/managed-services/firewall-management">
                     Firewall Management
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/managed-services/threat-hunting">
-                    Threat Hunting
-                  </Link>
+                  <a href="/managed-services/threat-hunting">Threat Hunting</a>
                 </li>
               </ul>
             </div>
           </Grid>
           <Grid item xs={12} md={4} lg={2} xl={2}>
-            <div className="footer-widget link-widget ml-10 rml-0 center-align">
+            <div className="footer-widget a-widget ml-10 rml-0 center-align">
               <h4 className="footer-title">Cloud Services</h4>
               <ul>
                 <li>
-                  <Link to="/cloud-services/microsoft-365">Microsoft 365</Link>
+                  <a href="/cloud-services/microsoft-365">Microsoft 365</a>
                 </li>
                 <li>
-                  <Link to="/cloud-services/microsoft-azure">
-                    Microsoft Azure
-                  </Link>
+                  <a href="/cloud-services/microsoft-azure">Microsoft Azure</a>
                 </li>
                 <li>
-                  <Link to="/cloud-services/amazon-web-services">
+                  <a href="/cloud-services/amazon-web-services">
                     Amazon Web Services
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
           </Grid>
           <Grid item xs={12} md={4} lg={2} xl={2}>
-            <div className="footer-widget link-widget ml-10 rml-0 center-align">
+            <div className="footer-widget a-widget ml-10 rml-0 center-align">
               <h4 className="footer-title">About</h4>
               <ul>
                 <li>
-                  <Link to="/about/our-story">About Us</Link>
+                  <a href="/about/our-story">About Us</a>
                 </li>
                 <li>
-                  <Link to="/about/contact-us">Contact Us</Link>
+                  <a href="/about/contact-us">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -174,9 +167,12 @@ export default function FooterHomeSix() {
               <ul>
                 <li className="mb-5">
                   <i className="fas fa-phone-alt"></i>{" "}
-                  <a className="ml-10" href="callto:+(+27) 21 976 6214">
-                    (+27) 21 976 6214
-                  </a>
+                  <img
+                    src={phoneImage}
+                    className="ml-10"
+                    style={{ width: "8.5rem" }}
+                    alt="Right Solutions Phone Number"
+                  />
                 </li>
                 <li className="mb-5">
                   <i className="fas fa-envelope"></i>{" "}
@@ -198,7 +194,9 @@ export default function FooterHomeSix() {
       <div className="copyright-area mt-20">
         <div className="container">
           <div className="copyright-inner justify-content-center">
-            <p>Copyright @ {year} Right Solutions All Rights Reserved.</p>
+            <p style={{ textAlign: "center" }}>
+              Copyright @ {year} Right Solutions All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ function ReusableHero({
           <div className="hero-content-five mr-10 rmr-0 py-125 rpy-100">
             <CSSTransition
               in={show}
-              appear
+              appear={show}
               timeout={1500}
               classNames={{
                 enter: "hero-header-enter",

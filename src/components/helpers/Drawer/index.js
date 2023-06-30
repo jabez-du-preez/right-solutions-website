@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logos/RS Logo - Blue.png";
+import emailImage from "../../../assets/images/email/hello.svg";
+import phoneImage from "../../../assets/images/email/phone.svg";
+import logo from "../../../assets/images/logos/rs-logo.svg";
 import StickyMenu from "../../../lib/StickyMenu";
 import "./style.css";
 
@@ -19,6 +21,7 @@ function Drawer({ drawer, action }) {
       }
     }
   };
+
   useEffect(() => {
     StickyMenu(".off_canvars_overlay");
   });
@@ -50,7 +53,7 @@ function Drawer({ drawer, action }) {
                       className="menu-item-has-children active"
                     >
                       <span className="menu-expand"></span>
-                      <a href="/">Home</a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li
                       onClick={(e) => handler(e, "Services")}
@@ -68,7 +71,10 @@ function Drawer({ drawer, action }) {
                         }}
                       >
                         <li>
-                          <Link to="/solutions/server-infrastructure">
+                          <Link
+                            preventScrollReset={false}
+                            to="/solutions/server-infrastructure"
+                          >
                             Server Infrastructure
                           </Link>
                         </li>
@@ -243,15 +249,20 @@ function Drawer({ drawer, action }) {
                 <div className="footer-widget-info">
                   <ul>
                     <li className="mb-1">
-                      <a href="mailto:info@rightsolutions.co.za">
-                        <i className="fa fa-envelope mr-2"></i>
-                        info@rightsolutions.co.za
-                      </a>
+                      <i className="fa fa-envelope mr-2"></i>
+                      <img
+                        src={emailImage}
+                        style={{ width: "10rem" }}
+                        alt="Right Solutions Contact Email"
+                      />
                     </li>
                     <li className="mb-1">
-                      <a href="#">
-                        <i className="fa fa-phone mr-2"></i> +(642) 342 762 44
-                      </a>
+                      <i className="fa fa-phone mr-2"></i>
+                      <img
+                        src={phoneImage}
+                        style={{ width: "8.25rem" }}
+                        alt="Right Solutions Contact Email"
+                      />
                     </li>
                     <li className="mb-1">
                       <a href="#">

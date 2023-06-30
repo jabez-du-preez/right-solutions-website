@@ -17,8 +17,8 @@ export default function HomeSix() {
       id: 1,
       header: "Cyber Security",
       explaination:
-        "We provide cyber security services to protect your business from cyber threats.",
-      href: "/managed-services/cyber-security",
+        "We provide cyber security training to protect your business from cyber threats.",
+      href: "/managed-services/cyber-security-awareness-training",
       icon: "fa-user-secret",
       iconColor: "bg-green",
     },
@@ -36,7 +36,7 @@ export default function HomeSix() {
       header: "Backup Solutions",
       explaination:
         "We provide backup solutions to protect your business from any data loss.",
-      href: "/managed-services/threat-hunting",
+      href: "/solutions/backup-solutions",
       icon: "fa-user-ninja",
       iconColor: "bg-red",
     },

@@ -13,9 +13,9 @@ export default function Story() {
     <>
       <Layouts
         bannerImage={bannerImage}
-        pageTitle="We are"
+        pageTitle="We are "
         highlight="Right Solutions"
-        pageSubtitle="With over 20 years’ experience working across industries such as legal, financial, architecture, education, manufacturing, amongst many others."
+        pageSubtitle="With over 20 years experience working across industries such as legal, financial, architecture, education, manufacturing, amongst many others."
         showButton
         scrollToComponent={scroll}
         buttonText="Learn More"

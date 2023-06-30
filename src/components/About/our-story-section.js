@@ -97,6 +97,7 @@ export default function StorySection({ id }) {
               </div>
             </div>
           </div>
+
           <div className="col-lg-6 col-sm-12 justify-content-center display-flex space-around flex-wrap">
             <div className="text-center lift-on-hover border-radius padding-auto feature-item-two bg-white-custom wow color-two fadeInUp delay-0-2s">
               <div className="icon mb-15">

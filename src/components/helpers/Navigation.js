@@ -1,17 +1,12 @@
 function Navigation({ className }) {
   function extractPath(url, section) {
-    // Split the URL inhref parts using the forward slash (/) as a separahrefr
     const parts = url.split("/");
-    console.log(parts);
-    // Return the second part (index 1) of the array
     return parts[section];
   }
 
   const category = extractPath(window.location.href, 3);
   const page = extractPath(window.location.href, 4);
 
-  console.log("category", category);
-  console.log("page", page);
   return (
     <>
       <div className={`restly-header-main-menu ${className || ""}`}>

@@ -1,13 +1,15 @@
-import { Box, Chip } from "@mui/material";
+import { Box, Button, Chip } from "@mui/material";
 import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import background from "../../assets/images/banners/contact.jpg";
-// import background from "../../assets/images/banners/contact/jpg";
 
 const emailAddress = process.env.REACT_APP_EMAIL_ADDRESS;
+const siteKey = process.env.REACT_APP_SITE_KEY;
 
 export default function Contact() {
   const [email, setEmail] = useState({});
   const [emailSent, setEmailSent] = useState(false);
+  const [captcha, setCaptcha] = useState(false);
   const form = useRef();
 
   const onChangeHandler = (e) => {
@@ -17,15 +19,6 @@ export default function Contact() {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    // const emailConfig = {
-    //   Host: "smtp.elasticemail.com",
-    //   Username: emailAddress,
-    //   Password: "19B8F80346381BCD358BC0C312A38493E35B",
-    //   To: emailAddress,
-    //   From: emailAddress,
-    //   Subject: `${email.user_email} - Potential Client`,
-    //   Body: `${email.message}`,
-    // };
 
     const emailConfig = {
       SecureToken: "136931ce-bff1-476a-b1d0-d60075438b9a",
@@ -41,10 +34,17 @@ export default function Contact() {
           setEmailSent(true);
           setTimeout(() => {
             setEmailSent(false);
+            setCaptcha(false);
             setEmail({});
           }, 3000);
         }
       });
+    }
+  };
+
+  const onChange = (value) => {
+    if (value !== null) {
+      setCaptcha(true);
     }
   };
 
@@ -135,18 +135,63 @@ export default function Contact() {
                       <div className="form-group mb-0">
                         <Box
                           component="div"
-                          sx={{ display: "flex", alignItems: "center" }}
+                          sx={{
+                            display: "flex",
+                            flexDirection: {
+                              xs: "column",
+                              sm: "column",
+                              md: "row",
+                              lg: "row",
+                              xl: "row",
+                            },
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                          }}
                         >
-                          <button type="submit" className="theme-btn">
-                            Send Message
-                          </button>
-                          {emailSent && (
-                            <Chip
-                              sx={{ ml: 3 }}
-                              label="Email sent!"
-                              color="success"
-                            />
-                          )}
+                          <ReCAPTCHA sitekey={siteKey} onChange={onChange} />
+                          <Box>
+                            {emailSent && (
+                              <Chip
+                                sx={{ mr: 1 }}
+                                label="Email sent!"
+                                color="success"
+                              />
+                            )}
+                            <Button
+                              variant="contained"
+                              size="large"
+                              sx={{
+                                ml: 2,
+                                fontFamily: "Montserrat",
+                                fontSize: {
+                                  xs: "1rem",
+                                  sm: "1rem",
+                                  md: "1.3rem",
+                                  lg: "1.3rem",
+                                  xl: "1.3rem",
+                                },
+                                marginTop: {
+                                  xs: "1rem",
+                                  sm: "1rem",
+                                  md: "0",
+                                  lg: "0",
+                                  xl: "0",
+                                },
+                                borderRadius: "10px",
+                                textTransform: "none",
+                                backgroundColor: "#3bb3eb",
+                                transition: "all 0.3s ease-in-out",
+                                "&:hover": {
+                                  color: "#3bb3eb",
+                                  backgroundColor: "black",
+                                },
+                              }}
+                              disabled={!captcha}
+                              type="submit"
+                            >
+                              Send Message
+                            </Button>
+                          </Box>
                         </Box>
                       </div>
                     </div>
